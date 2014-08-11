@@ -1,0 +1,139 @@
+/* Palette color codes */
+/* Feel free to copy&paste color codes to your application */
+.primary {
+  background-color: #b90e00; }
+
+.primary-dark {
+  background-color: #940b00; }
+
+.primary-darker {
+  background-color: #660700; }
+
+.primary-light {
+  background-color: #e01000; }
+
+.primary-lighter {
+  background-color: #ff2312; }
+
+.secondary {
+  background-color: #b94700; }
+
+.secondary-dark {
+  background-color: #943900; }
+
+.secondary-darker {
+  background-color: #662700; }
+
+.secondary-light {
+  background-color: #e05600; }
+
+.secondary-lighter {
+  background-color: #ff6d12; }
+
+.accent {
+  background-color: #00785d; }
+
+.accent-dark {
+  background-color: #005f4a; }
+
+.accent-darker {
+  background-color: #004233; }
+
+.accent-light {
+  background-color: #009070; }
+
+.accent-lighter {
+  background-color: #0cac88; }
+
+.complement {
+  background-color: #008e19; }
+
+.complement-dark {
+  background-color: #007114; }
+
+.complement-darker {
+  background-color: #004e0e; }
+
+.complement-light {
+  background-color: #00ab1e; }
+
+.complement-lighter {
+  background-color: #0ec82f; }
+
+.grey {
+  background-color: #666666; }
+
+.grey-dark {
+  background-color: #3c3c3c; }
+
+.grey-darker {
+  background-color: #101010; }
+
+.grey-light {
+  background-color: #e0e0e0; }
+
+.grey-lighter {
+  background-color: #fafafa; }
+
+/* end */
+body {
+  margin: 0;
+  padding: 2em;
+  background: white;
+  color: #666;
+  font: 75%/1.33 Verdana, sans-serif;
+  text-align: left; }
+
+h1 {
+  margin: 0.5em 0;
+  font-size: 200%; }
+
+p {
+  margin: 0.5em 0; }
+
+.color-table {
+  margin: 2em 2em 5em;
+  border-collapse: collapse;
+  border: none;
+  border-spacing: 0;
+  font-size: 100%; }
+
+.color-table th {
+  padding: 0 1em 0 0;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 110%;
+  border: none; }
+
+.color-table td.sample {
+  width: 10em;
+  height: 8em;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 90%;
+  border: 1px solid white;
+  white-space: nowrap; }
+
+.color-table.small td.sample {
+  width: 4em;
+  height: 4em;
+  padding: 0;
+  border: none; }
+
+.color-table .white {
+  margin-bottom: 0.2em;
+  color: white; }
+
+.color-table .black {
+  margin-top: 0.2em;
+  color: black; }
+
+hr {
+  border: none;
+  border-bottom: 1px solid silver; }
+
+#footer {
+  padding: 1em;
+  text-align: center;
+  font-size: 80%; }

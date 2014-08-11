@@ -1,0 +1,14 @@
+<span class="keyword">def</span> <span class="method">read_file</span> <span class="attibute">file_path</span>
+  <span class="variable">input</span> = <span class="class">File</span>.<span class="method">new</span>(<span class="attibute">file_path</span>, <span class="string">"r"</span>)
+
+  <span class="keyword">while</span> <span class="variable">line</span> = <span class="variable">input</span>.<span class="method">gets</span>
+    <span class="variable">line</span> = <span class="method">process_line</span> <span class="variable">line</span>
+    <span class="keyword">puts</span> <span class="variable">line</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">def</span> <span class="method">process_line</span> <span class="attibute">line</span>
+  <span class="attibute">line</span>.<span class="method">split</span>(<span class="string">''</span>).<span class="method">sort</span>.<span class="method">join</span>
+<span class="keyword">end</span>
+
+<span class="method">read_file</span> <span class="string">"example.txt"</span>

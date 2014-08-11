@@ -1,0 +1,8 @@
+  <svg class="info-pane-begin" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="background"
+      d="M-2,102 L-2,-2 L102,-2 L102,102 Z" />
+    <path class="accent"
+      d="M0,0 L0,100 L100,50 L100,0 Z" />
+    <path class="main"
+      d="M-2,-2 L-2,102 L0,100 L85,0 L100,100 L102,102 L102,-2 Z" />
+  </svg>
