@@ -1,8 +1,33 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+/* AUTHOR */
+  Stephen A. Wilson
+    http://Stephenawilson.ca
+
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Sublime, Git, Sass
+  Language:
+    English
+
+  Standards:
+    HTML5, CSS3
+
+
+/* SOFTWARE */
+  Sublime Text 3
+    http://www.sublimetext.com/
+
+  Git
+    http://git-scm.com/
+
+  Sass
+    http://sass-lang.com/
+
+
+/* COMPONENTS */
+  Foundation
+    http://foundation.zurb.com/
+
+  JQuery:
+    https://jquery.com/
+
+
+/* humanstxt.org */
