@@ -5,7 +5,7 @@
 .vagrant
 
 # PHP-Framework
-/www/config/config.php
+www/config
 
 # Other
 .sass-cache
