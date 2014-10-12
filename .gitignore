@@ -1,12 +1,8 @@
 # OS-specific
 .DS_Store
 
-# Vagrant stuff
-.vagrant
-
 # PHP-Framework
-www/config
+/config
 
 # Other
 .sass-cache
-*.log
