@@ -1,5 +1,7 @@
 <?php
   class CONFIG {
-    public static $domain = 'http://stephenawilson.dev';
+    public static $domain = "";
   }
+
+  CONFIG::$domain = "//".$_SERVER['HTTP_HOST'];
 ?>
