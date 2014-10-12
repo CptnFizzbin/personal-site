@@ -7,6 +7,6 @@
     header("Location: https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
   }
 
-  include("Config.php");
+  include("../config/config.php");
   include("Layout.php");
 ?>

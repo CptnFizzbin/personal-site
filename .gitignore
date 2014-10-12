@@ -1,2 +1,12 @@
+# OS-specific
+.DS_Store
+
+# Vagrant stuff
+.vagrant
+
+# PHP-Framework
+/www/config/config.php
+
+# Other
 .sass-cache
-*.sublime*
+*.log
