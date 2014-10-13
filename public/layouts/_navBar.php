@@ -10,7 +10,7 @@
     <section class="top-bar-section">
       <ul class="right">
         <li>
-          <a href="mailto:Stephen-356@hotmail.com">Stephen-356@hotmail.com</a>
+          <a href="mailto:WebDev@stephenawilson.ca">WebDev@stephenawilson.ca</a>
         </li>
         <li class="divider"></li>
         <li class="<?php if (Layout::$title == 'Resume') { echo "active"; }; ?>">
