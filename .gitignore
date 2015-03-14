@@ -1,8 +1,5 @@
-# OS-specific
-.DS_Store
-
-# PHP-Framework
-/config
-
-# Other
 .sass-cache
+.tmp
+dist
+node_modules
+app/_/bower_components
