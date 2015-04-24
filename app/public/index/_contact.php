@@ -7,8 +7,8 @@
     <a href="mailto:Stephen-356@hotmail.com">Stephen-356@hotmail.com</a>
   </div>
   <div class="small-12 medium-6 columns">
-    <h4>Skype</h4>
-    <a href="skype:SpyMaster356">SpyMaster356</a>
+    <h4>Google Plus</h4>
+    <a href="https://plus.google.com/u/0/+StephenWilson356/" target="_blank">+StephenWilson356</a>
   </div>
   <div class="small-12 medium-6 columns medium-text-right">
     <h4>Twitter</h4>
