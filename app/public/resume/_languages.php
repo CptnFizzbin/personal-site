@@ -4,35 +4,35 @@
   </div>
   <div class="small-12 medium-4 columns">
     <ul>
-      <li><strong>Ruby on Rails</strong></li>
-      <li>Ruby</li>
       <li><strong>HTML5</strong>
         <ul>
           <li>HAML</li>
-          <li>Mustache</li>
         </ul>
       </li>
+      <li>Ruby/Ruby on Rails</li>
     </ul>
   </div>
   <div class="small-12 medium-4 columns">
     <ul>
       <li><strong>PHP</strong></li>
+      <li><strong>JavaScript</strong>
+        <ul>
+          <li>jQuery</li>
+          <li>Angular</li>
+        </ul>
+      </li>
       <li>CSS3
         <ul>
           <li>Sass/Scss</li>
-        </ul>
-      </li>
-      <li>JavaScript
-        <ul>
-          <li>jQuery</li>
         </ul>
       </li>
     </ul>
   </div>
   <div class="small-12 medium-4 columns">
     <ul>
-      <li>C#</li>
+      <li><strong>C#</strong></li>
       <li>Java</li>
+      <li>Mustache</li>
     </ul>
   </div>
 </div>

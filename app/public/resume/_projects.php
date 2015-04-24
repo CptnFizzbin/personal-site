@@ -6,14 +6,38 @@
   <div class="small-12 large-10 large-centered columns">
     <div class="row">
       <div class="small-12 columns">
+        <h3>Not Just Kibble Dog Tool</h3>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <div class="info-pane">
+          <ul>
+            <li>Angular</li>
+            <li>Georgian College</li>
+          </ul>
+        </div>
+        <?php include "images/svgs/info_pane_end.svg"; ?>
+      </div>
+      <div class="small-12 medium-8 columns">
+        <p>
+          With a group of 8 other students at Georgian college, we are developing
+          an internal application for local Barrie business Not Just Kibble. The
+          tool is designed and developed to keep track of Not Just Kibble's clients
+          to ensure safety of the dogs, and to help manage schedules.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-12 large-10 large-centered columns">
+    <div class="row">
+      <div class="small-12 columns">
         <h3>PHP Forum</h3>
       </div>
       <div class="small-12 medium-4 columns">
         <div class="info-pane">
           <ul>
             <li>PHP, HTML5</li>
-            <li>Web Programming</li>
-            <li>Adv. Web Programming</li>
+            <li>Georgian College</li>
           </ul>
         </div>
         <?php include "images/svgs/info_pane_end.svg"; ?>
@@ -39,7 +63,7 @@
         <div class="info-pane">
           <ul>
             <li>AS3</li>
-            <li>Grade 12 Computer Science</li>
+            <li>ODSS</li>
           </ul>
         </div>
         <?php include "images/svgs/info_pane_end.svg"; ?>
