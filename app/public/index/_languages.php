@@ -1,78 +1,49 @@
-<section id="languages">
-  <div class="row">
-    <div class="small-12 columns medium-text-center">
-      <h3>Languages</h3>
-    </div>
-    <div class="small-12 columns">
-      <div class="row">
-        <div class="small-12 medium-6 columns">
-          <div class="row">
-            <div class="small-5 medium-6 columns">
-              <div class="panel no-print">
-                <img src="images/svgs/Ruby.svg" alt="Ruby Logo" />
-              </div>
-            </div>
-            <div class="small-7 medium-6 columns">
-              <h4>Ruby</h4>
-              <p>
-                <strong>Intermediate skill</strong><br />
-                Web applications with Ruby on Rails
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="small-12 medium-6 columns">
-          <div class="row">
-            <div class="small-5 medium-6 medium-push-6 columns">
-              <div class="panel no-print">
-                <img src="images/svgs/PHP.svg" alt="PHP Logo" />
-              </div>
-            </div>
-            <div class="small-7 medium-6 medium-pull-6 medium-text-right columns">
-              <h4>PHP</h4>
-              <p>
-                <strong>Intermediate skill</strong><br />
-                Static web sites
-              </p>
-            </div>
-          </div>
-        </div>
+<div class="row">
+  <div class="small-12 columns medium-text-center">
+    <h3>Languages</h3>
+  </div>
+  <div class="small-12 columns">
+    <div class="row">
+      <div class="small-12 large-4 columns">
+        <h3>PHP</h3>
+        <p>
+          Although I seem to be in the minority, PHP is my preferred web
+          language, due to how common it is. I have worked with PHP throughout
+          my College career, and used it extensively at One More Story Games
+          during my co-op there.
+        </p>
       </div>
 
-      <div class="row">
-        <div class="small-12 medium-6 columns">
-          <div class="row">
-            <div class="small-5 medium-6 columns">
-              <div class="panel no-print">
-                <img src="images/svgs/html.svg" alt="HTML5 Logo" />
-              </div>
-            </div>
-            <div class="small-7 medium-6 columns">
-              <h4>HTML5</h4>
-              <p>
-                <strong>Intermediate skill</strong><br />
-                HAML
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="small-12 medium-6 columns">
-          <div class="row">
-            <div class="small-5 medium-6 medium-push-6 columns">
-              <div class="panel no-print">
-                <img src="images/svgs/css.svg" alt="CSS3 Logo" />
-              </div>
-            </div>
-            <div class="small-7 medium-6 medium-pull-6 medium-text-right columns">
-              <h4>CSS3</h4>
-              <p>
-                <strong>Beginner skill</strong><br />
-                Sass/Scss
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="small-12 large-4 columns">
+        <h3>JavaScript</h3>
+        <p>
+          Over the last four months I have worked on an Angular app with other
+          students at Georgian Collage as part of our schooling. I have enjoyed
+          working with JavaScript because of it's simplicity, and power. In my
+          work, I have used both JQuery and recently Angular.
+        </p>
+      </div>
+
+      <div class="small-12 large-4 columns">
+        <h3>SQL</h3>
+        <p>
+          Although I often look for libraries to handle database interactions,
+          I am quite familiar with SQL queries, and am able to write my own SQL when
+          a library doesn't cover what I need. In the past I have worked with
+          PostgreSQL servers, but my favorite flavour is MySQL because of its
+          widespread usage.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <p>Other languages that have worked with in the past include:</p>
+        <ul>
+          <li>Ruby/Ruby on Rails</li>
+          <li>asp.NET</li>
+          <li>Mustache</li>
+        </ul>
       </div>
     </div>
   </div>
-</section>
+</div>

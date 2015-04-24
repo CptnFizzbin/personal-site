@@ -1,6 +1,5 @@
 <?php
   include_once ($_SERVER['DOCUMENT_ROOT'] . '/includes.php');
-  Layout::$layout = "home";
   ob_start();
 ?>
 
@@ -24,15 +23,17 @@
     </div>
   </section>
 
-  <?php
-    include("images/svgs/section_begin.svg");
+    <?php include("images/svgs/section_begin.svg"); ?>
+    <section><?php include("resume/_overview.php"); ?></section>
 
-    include("_languages.php");
+    <?php include("images/svgs/section_end.svg"); ?>
+    <section><?php include("_languages.php"); ?></section>
 
-    include("images/svgs/section_end.svg");
+    <?php include("images/svgs/section_begin.svg"); ?>
+    <section><?php include("resume/_experience.php"); ?></section>
 
-    include("_contact.php");
-  ?>
+    <?php include("images/svgs/section_end.svg"); ?>
+    <section><?php include("_contact.php"); ?></section>
 </div>
 
 <?php

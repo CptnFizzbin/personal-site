@@ -6,15 +6,21 @@
       </div>
       <div class="small-12 columns">
         <p>
-          During the 2013 Summer term, I held a co-op placement with Mosaic Sales Solutions in Toronto as an Interactive Programmer. At that placement, we used Ruby on Rails extensively to create an internal web application for project management. I had little knowledge of Rails at the begining of the placement, but Ruby and Ruby on Rails quickly became my preferred web languages. This is because of the "Write less, do more" style of Ruby.
+          I am currently in my final semester at Georgian College for Computer
+          Programmer/Analyst, focusing on web technologies. I enjoy working
+          in the Internet industry because it allows people to use tools and
+          applications without having to install them on their devices. It also
+          allows for the same tool to be used on anywhere that has an Internet
+          connection.
         </p>
         <p>
-          At <a href="http://www.georgiancollege.ca/">Georgian College</a>, now in my third year, I continue to learn PHP and HTML5. In my first year, as a final project for Web Programming Fundamentals, I created a PHP powered web forum board from scratch. It was fully functional with user profiles, password logins, threads, and some BBCode support. In the following year, I recreated the entire site using Object Oriented PHP.
-        </p>
-        <p>
-          I enjoy web development, because the final product is accessible to all users without having to install extra software. Also, there are many libraries and plugins avaliable for Rails, JavaScript, and other web languages, allowing for quick and easy creation of services. I enjoy the ever changing technologies in this industry, and each day I learn about new things that are possible.
+          I am very passionate about learning new tools, and discovering new
+          ways to do things. I also strive to produce code that is easy to
+          understand as I makes it easier for other developers to modify my
+          code.
         </p>
       </div>
     </div>
   </div>
 </div>
+

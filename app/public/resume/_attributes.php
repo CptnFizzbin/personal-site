@@ -1,6 +1,6 @@
 <div class="row">
   <div class="small-12 columns medium-text-center">
-    <h2>Attrubutes</h2>
+    <h2>Attributes</h2>
   </div>
   <div class="small-12 columns">
     <ul>

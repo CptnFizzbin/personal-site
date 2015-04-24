@@ -10,11 +10,15 @@
     <section class="top-bar-section">
       <ul class="right">
         <li>
-          <a href="mailto:WebDev@stephenawilson.ca">WebDev@stephenawilson.ca</a>
+          <a href="mailto:stephen-356@hotmail.com">stephen-356@hotmail.com</a>
+        </li>
+        <li class="divider"></li>
+        <li class="<?php if (Layout::$title == '') { echo "active"; }; ?>">
+          <a href="/">Home</a>
         </li>
         <li class="divider"></li>
         <li class="<?php if (Layout::$title == 'Resume') { echo "active"; }; ?>">
-          <a href="resume/">Résumé</a>
+          <a href="/resume">Résumé</a>
         </li>
         <li class="divider"></li>
         <li>
@@ -22,7 +26,7 @@
         </li>
         <li class="divider"></li>
         <li class="<?php if (Layout::$title == 'Projects') { echo "active"; }; ?>">
-          <a href="projects/">Projects</a>
+          <a href="/projects">Projects</a>
         </li>
       </ul>
     </section>
