@@ -20,7 +20,7 @@
       </div>
       <div class="small-12 medium-6 columns">
         <ul>
-          <li>Dean’s List – Fall 2012, Winter 2012</li>
+          <li>Dean’s List – Fall 2012, Winter 2013, Winter 1015</li>
         </ul>
       </div>
     </div>

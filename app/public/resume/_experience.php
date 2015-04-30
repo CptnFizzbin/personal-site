@@ -17,7 +17,7 @@
           <ul>
             <li>Co-op</li>
             <li>Developer</li>
-            <li>January 2014 - April 2014</li>
+            <li>September 2014 - April 2015</li>
           </ul>
         </div>
         <?php include "images/svgs/info_pane_end.svg"; ?>
