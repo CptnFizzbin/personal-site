@@ -1,30 +1,110 @@
-<div class="container">
-  <div class="row">
-    <div class="large-12 large-text-center columns">
-      <div class="panel">
-        <h1>'Allo, 'Allo!</h1>
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        <p>Always a pleasure scaffolding your apps.</p>
-        <p class="animated infinite" ng-class="main.classAnimation">
-          <a href="#" class="button success" ng-click="main.showToastr()">Splendid Toastr</a>
-        </p>
-        <p>
-          With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
-        </p>
+<div class="homepage">
+  <section>
+    <div class="row">
+      <div class="small-12 medium-4 large-3 columns">
+        <img src="assets/images/Profile-Personal.jpg" id="self-portrait" alt="Stephen A. Wilson"/>
       </div>
+      <div class="small-12 medium-8 large-9 columns">
+        <div class="row">
+          <div class="small-12 small-text-center columns">
+            <h1>Stephen A. Wilson</h1>
+          </div>
+          <div class="small-12 small-text-center columns">
+            <h2 class="subtitle">
+              Student of Backend Web Development
+            </h2>
+          </div>
+        </div>
     </div>
-  </div>
+  </section>
 
-  <div class="row">
-    <div class="large-4 columns" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-      <div class="th">
-        <img class="right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-        <div class="caption">
-          <h3>{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-          <p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a></p>
+  <section-start></section-start>
+
+  <section>
+    <overview-section></overview-section>
+  </section>
+
+  <section-end></section-end>
+
+  <section>
+    <div class="row">
+      <div class="small-12 columns medium-text-center">
+        <h3>Languages</h3>
+      </div>
+      <div class="small-12 columns">
+        <div class="row">
+          <div class="small-12 large-4 columns">
+            <h3>PHP</h3>
+            <p>
+              Although I seem to be in the minority, PHP is my preferred web
+              language, due to how common it is. I have worked with PHP throughout
+              my College career, and used it extensively at One More Story Games
+              during my co-op there.
+            </p>
+          </div>
+
+          <div class="small-12 large-4 columns">
+            <h3>JavaScript</h3>
+            <p>
+              Over the last four months I have worked on an Angular app with other
+              students at Georgian Collage as part of our schooling. I have enjoyed
+              working with JavaScript because of it's simplicity, and power. In my
+              work, I have used both JQuery and recently Angular.
+            </p>
+          </div>
+
+          <div class="small-12 large-4 columns">
+            <h3>SQL</h3>
+            <p>
+              Although I often look for libraries to handle database interactions,
+              I am quite familiar with SQL queries, and am able to write my own SQL when
+              a library doesn't cover what I need. In the past I have worked with
+              PostgreSQL servers, but my favorite flavour is MySQL because of its
+              widespread usage.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <p>Other languages that have worked with in the past include:</p>
+            <ul>
+              <li>Ruby/Ruby on Rails</li>
+              <li>asp.NET</li>
+              <li>Mustache</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section-start></section-start>
+
+  <section><experience-section></experience-section></section>
+
+  <section-end></section-end>
+
+  <section>
+    <div class="row">
+      <div class="small-12 columns medium-text-center">
+        <h3>Contact</h3>
+      </div>
+      <div class="small-12 medium-6 columns medium-text-right">
+        <h4>Email</h4>
+        <a href="mailto:Stephen-356@hotmail.com">Stephen-356@hotmail.com</a>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <h4>Google Plus</h4>
+        <a href="https://plus.google.com/u/0/+StephenWilson356/" target="_blank">+StephenWilson356</a>
+      </div>
+      <div class="small-12 medium-6 columns medium-text-right">
+        <h4>Twitter</h4>
+        <a href="https://twitter.com/SpyMaster356" target="_blank">@SpyMaster356</a>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <h4>GitHub</h4>
+        <a href="https://github.com/SpyMaster356" target="_blank">SpyMaster356</a>
+      </div>
+    </div>
+  </section>
 </div>

@@ -1,0 +1,77 @@
+@media print {
+  svg,
+  .top-bar,
+  .no-print,
+  img {
+    display: none !important;
+  }
+
+  header {
+    a[href]:after {
+      content: "";
+    }
+
+    h1 {
+      text-align: center;
+      small {
+        text-align: center;
+      }
+    }
+  }
+
+  header:after {
+    content: " ";
+    display: block;
+    border-top: 4pt solid;
+    padding-top: 2pt;
+    border-bottom: 2pt solid;
+  }
+
+  section {
+    border-bottom: 1pt solid;
+
+    page-break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 16pt;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 16pt;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  h3 {
+    font-size: 14pt;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 14pt;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  p,
+  li {
+    font-size: 10pt;
+  }
+
+  .info-pane {
+
+    ul {
+
+      li {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

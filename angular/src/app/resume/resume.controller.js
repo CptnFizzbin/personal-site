@@ -3,10 +3,10 @@
 
   angular
     .module('angular')
-    .controller('MainCtrl', MainCtrl);
+    .controller('ResumeCtrl', ResumeCtrl);
 
   /** @ngInject */
-  function MainCtrl() {
+  function ResumeCtrl() {
 
   }
 })();

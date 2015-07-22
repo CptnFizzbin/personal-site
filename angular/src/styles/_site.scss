@@ -1,0 +1,48 @@
+main {
+
+  margin-top: 4rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background: none;
+
+    color: $c-grey-darker;
+
+    small {
+      color: $c-grey;
+    }
+  }
+
+  h2.subtitle {
+    font-size: 1.5rem
+  }
+}
+
+
+
+.panel {
+  border-width: 3px;
+  border-color: $c-secondary;
+}
+
+.top-bar {
+  a {
+    transition: background 0.5s;
+  }
+}
+
+/* Fix Svg images in IE */
+img[src*=".svg"] {
+  width: 100%\9;
+}
+
+@media screen and (min-width:0\0) {
+  img[src*=".svg"] {
+    width: 100%;
+  }
+}
+

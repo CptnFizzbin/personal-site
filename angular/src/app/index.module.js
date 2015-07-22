@@ -2,6 +2,8 @@
   'use strict';
 
   angular
-    .module('angular', ['ui.router', 'mm.foundation']);
+    .module('angular', [
+        'ui.router','mm.foundation'
+    ]);
 
 })();
