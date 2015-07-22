@@ -1,19 +1,13 @@
 /**
- *  If you want to override some foundation settings, you have to change values here.
- *  The list of settings values are listed here bower_components/foundation/scss/foundation/_settings.scss
- */
-$topbar-bg-color: #5AADBB;
-
-/**
  *  The import of foundation is made manually because there is still no links of the
  *  sass version in their bower.json...
  */
-@import '../styles/colours';
-@import '../styles/settings';
+@import 'styles/colours';
+@import 'styles/settings';
 
 @import '../../bower_components/foundation/scss/foundation';
 
-@import "../styles/main";
+@import "styles/main";
 
 /**
  *  Do not remove this comments bellow. It's the markers used by wiredep to inject
