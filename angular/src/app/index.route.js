@@ -19,6 +19,11 @@
         url: '/resume',
         templateUrl: 'app/resume/resume.html',
         controller: 'ResumeCtrl'
+      })
+      .state('projects', {
+        url: '/projects',
+        templateUrl: 'app/projects/projects.html',
+        controller: 'ProjectsCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
