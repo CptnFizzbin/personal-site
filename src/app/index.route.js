@@ -12,17 +12,17 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/pages/main/main.html',
         controller: 'MainCtrl'
       })
       .state('resume', {
         url: '/resume',
-        templateUrl: 'app/resume/resume.html',
+        templateUrl: 'app/pages/resume/resume.html',
         controller: 'ResumeCtrl'
       })
       .state('projects', {
         url: '/projects',
-        templateUrl: 'app/projects/projects.html',
+        templateUrl: 'app/pages/projects/projects.html',
         controller: 'ProjectsCtrl'
       });
 
