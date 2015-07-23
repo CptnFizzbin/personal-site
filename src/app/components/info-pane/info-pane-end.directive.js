@@ -9,7 +9,7 @@
   function infoPaneEnd() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/directives/info-pane/info-pane-end.svg'
+      templateUrl: 'app/components/info-pane/info-pane-end.svg'
     };
 
     return directive;

@@ -3,13 +3,13 @@
 
   angular
     .module('angular')
-    .directive('educationSection', educationSection);
+    .directive('softwareSection', softwareSection);
 
   /** @ngInject */
-  function educationSection() {
+  function softwareSection() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/sections/education/education-section.html'
+      templateUrl: 'app/components/sections/software/software-section.html'
     };
 
     return directive;

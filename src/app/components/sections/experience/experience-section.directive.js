@@ -9,7 +9,7 @@
   function experienceSection() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/sections/experience/experience-section.html'
+      templateUrl: 'app/components/sections/experience/experience-section.html'
     };
 
     return directive;

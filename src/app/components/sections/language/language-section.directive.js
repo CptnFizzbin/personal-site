@@ -3,13 +3,13 @@
 
   angular
     .module('angular')
-    .directive('overviewSection', overviewSection);
+    .directive('languageSection', languageSection);
 
   /** @ngInject */
-  function overviewSection() {
+  function languageSection() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/sections/overview/overview-section.html'
+      templateUrl: 'app/components/sections/language/language-section.html'
     };
 
     return directive;

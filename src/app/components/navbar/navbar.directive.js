@@ -9,7 +9,7 @@
   function spyNavbar() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/directives/navbar/navbar.html',
+      templateUrl: 'app/components/navbar/navbar.html',
       scope: {},
       controller: NavbarController,
       controllerAs: 'vm',

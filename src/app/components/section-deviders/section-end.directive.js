@@ -3,13 +3,13 @@
 
   angular
     .module('angular')
-    .directive('softwareSection', softwareSection);
+    .directive('sectionEnd', sectionEnd);
 
   /** @ngInject */
-  function softwareSection() {
+  function sectionEnd() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/sections/software/software-section.html'
+      templateUrl: 'app/components/section-deviders/section-end.svg'
     };
 
     return directive;

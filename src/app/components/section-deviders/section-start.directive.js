@@ -3,13 +3,13 @@
 
   angular
     .module('angular')
-    .directive('infoPaneStart', infoPaneStart);
+    .directive('sectionStart', sectionEnd);
 
   /** @ngInject */
-  function infoPaneStart() {
+  function sectionEnd() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/directives/info-pane/info-pane-start.svg'
+      templateUrl: 'app/components/section-deviders/section-start.svg'
     };
 
     return directive;

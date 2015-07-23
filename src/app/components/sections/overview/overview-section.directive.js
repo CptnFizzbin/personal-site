@@ -3,13 +3,13 @@
 
   angular
     .module('angular')
-    .directive('interestsSection', interestsSection);
+    .directive('overviewSection', overviewSection);
 
   /** @ngInject */
-  function interestsSection() {
+  function overviewSection() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/sections/interests/interests-section.html'
+      templateUrl: 'app/components/sections/overview/overview-section.html'
     };
 
     return directive;
