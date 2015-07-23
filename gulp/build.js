@@ -4,6 +4,7 @@ var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
 var git = require('git-rev');
+var runSequence = require('run-sequence');
 
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
@@ -92,7 +93,7 @@ gulp.task('clean', function (done) {
 });
 
 gulp.task('build-info', function (done) {
-  git.long(function (hash) {
+  git.short(function (hash) {
     var filename = path.join(conf.paths.dist, '/build-info.json');
     var contents = JSON.stringify({
       'git': hash
@@ -102,4 +103,11 @@ gulp.task('build-info', function (done) {
   });
 });
 
-gulp.task('build', ['html', 'fonts', 'other', 'build-info']);
+gulp.task('build', function (done) {
+  runSequence(
+    'clean',
+    ['html', 'fonts', 'other'],
+    'build-info',
+    done
+  );
+});
