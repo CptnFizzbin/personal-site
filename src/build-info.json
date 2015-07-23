@@ -1,1 +1,8 @@
-{"git": "development"}
+{
+  "git": {
+    "tag": "b3dc1c8939e434f8f5f87b37f5a8bf4b4423c8b6",
+    "branch": "master",
+    "long": "b3dc1c8939e434f8f5f87b37f5a8bf4b4423c8b6",
+    "short": "b3dc1c8"
+  }
+}

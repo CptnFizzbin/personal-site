@@ -3,7 +3,6 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
-var git = require('git-rev');
 var runSequence = require('run-sequence');
 
 var $ = require('gulp-load-plugins')({
@@ -92,22 +91,11 @@ gulp.task('clean', function (done) {
   $.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build-info', function (done) {
-  git.short(function (hash) {
-    var filename = path.join(conf.paths.dist, '/build-info.json');
-    var contents = JSON.stringify({
-      'git': hash
-    });
-    require('fs').writeFileSync(filename, contents);
-    done();
-  });
-});
-
 gulp.task('build', function (done) {
   runSequence(
     'clean',
     ['html', 'fonts', 'other'],
-    'build-info',
+    'build-info:dist',
     done
   );
 });
