@@ -1,6 +1,12 @@
 @import "responsive_align";
 @import "print";
 
+h1,
+h2 {
+  font-family: 'Audiowide', cursive;
+  background: none;
+}
+
 main {
   margin-top: 4rem;
 
@@ -10,8 +16,6 @@ main {
   h4,
   h5,
   h6 {
-    background: none;
-
     color: $c-grey-darker;
 
     small {
