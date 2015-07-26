@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="small-12 columns">
+        <h1>Simple Rambles</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-3 columns">
+    <div sticky offset="75">
+        <div class="info-pane">
+            <ul>
+                <li ui-sref-active="active">
+                    <a ui-sref="blog.all">All Posts</a>
+                </li>
+                <li ng-repeat="post in blogPosts" ui-sref-active="active">
+                    <a ui-sref="blog.post({ slug: post.slug })">{{ post.title }}</a>
+                </li>
+            </ul>
+        </div>
+        <info-pane-end></info-pane-end>
+    </div>
+    </div>
+    <div class="medium-9 columns">
+        <div ui-view>
+        </div>
+    </div>
+</div>
