@@ -3,7 +3,9 @@
 
   angular
     .module('angular', [
-        'ui.router','mm.foundation'
+        'ui.router',
+        'mm.foundation',
+        'sticky'
     ]);
 
 })();
