@@ -3,13 +3,13 @@
 
   angular
     .module('angular')
-    .directive('sectionEnd', sectionEnd);
+    .directive('sectionStart', sectionEnd);
 
   /** @ngInject */
   function sectionEnd() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/section-deviders/section-end.svg'
+      templateUrl: 'app/components/section-dividers/section-start.svg'
     };
 
     return directive;
