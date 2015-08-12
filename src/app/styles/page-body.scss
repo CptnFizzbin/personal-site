@@ -1,0 +1,80 @@
+/**
+ * #PAGE-BODY
+ */
+
+main {
+  margin-top: 2rem;
+}
+
+.img--circle {
+  border-radius: 100%;
+}
+
+.img--centered {
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
+/**
+ * #PAGE-BODY-PRINT
+ */
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  svg,
+  img {
+    display: none !important;
+  }
+
+  section {
+    border-bottom: 1pt solid;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p,
+  li {
+    font-size: 10pt;
+  }
+
+  .info-pane {
+    ul {
+      li {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+/**
+ * #PAGE-BODY-IE-FIXES
+ */
+
+/* Fix Svg images in IE */
+img[src*=".svg"] {
+  width: 100%\9;
+}
+
+@media screen and (min-width:0\0) {
+  img[src*=".svg"] {
+    width: 100%;
+  }
+}

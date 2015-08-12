@@ -1,0 +1,40 @@
+/**
+ * #PAGE-HEADER
+ */
+
+//no styles right now
+
+
+
+
+
+/**
+ * #PAGE-HEADER-PRINT
+ */
+
+@media print {
+  header {
+    a[href]:after {
+      content: "";
+    }
+
+    h1 {
+      text-align: center;
+      small {
+        text-align: center;
+      }
+    }
+  }
+
+  header:after {
+    content: " ";
+    display: block;
+    border-top: 4pt solid;
+    padding-top: 2pt;
+    border-bottom: 2pt solid;
+  }
+
+  .top-bar {
+    display: none !important;
+  }
+}

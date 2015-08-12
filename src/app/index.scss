@@ -2,12 +2,10 @@
  *  The import of foundation is made manually because there is still no links of the
  *  sass version in their bower.json...
  */
-@import 'styles/colours';
-@import 'styles/settings';
+@import 'styles/config/colours';
+@import 'styles/config/foundation';
 
 @import '../../bower_components/foundation/scss/foundation';
-
-@import "styles/main";
 
 /**
  *  Do not remove this comments bellow. It's the markers used by wiredep to inject
