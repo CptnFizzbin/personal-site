@@ -13,6 +13,11 @@
  */
 body {
   padding-top: $navbar-height;
+  color: $colour-text-light;
+}
+
+body a {
+  color: $colour2;
 }
 
 hr {
@@ -47,6 +52,8 @@ hr {
  */
 .jumbotron {
   border-bottom: 5px solid #E5900B;
+  color: $colour-text-dark;
+  margin-bottom: 60px;
 }
 
 
@@ -60,8 +67,12 @@ $panel-heading-overhang: 20px;
 
 .panel {
   border: none;
+
   margin-left: $panel-heading-overhang;
   margin-right: $panel-heading-overhang;
+  margin-bottom: 60px;
+
+  color: $colour-text-dark;
 
   position: relative;
 
