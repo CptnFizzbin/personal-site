@@ -5,6 +5,7 @@
  *     ##Navbar
  *     ##Jumbotron
  *     ##Panels
+ *       ###Panels: Primary
  */
 
 /**
@@ -66,7 +67,7 @@ $panel-heading-overhang: 20px;
 
   &:after{
     content: "";
-    background: #E5900B;
+    background: $colour1-dark;
 
     height: 40px;
     width: 100%;
@@ -81,7 +82,7 @@ $panel-heading-overhang: 20px;
   }
 }
 
-.panel .panel-heading {
+.panel > .panel-heading {
   margin-left: -$panel-heading-overhang;
   margin-right: -$panel-heading-overhang;
 
@@ -95,7 +96,6 @@ $panel-heading-overhang: 20px;
 
   &:after{
     content: "";
-    background: #621628;
 
     margin-left: -$panel-heading-overhang;
 
@@ -118,6 +118,24 @@ $panel-heading-overhang: 20px;
   margin-bottom: 5px;
 }
 
-.panel .panel-body {
-  border-top: 5px solid #621628;
+/**
+ * ###Panels: Default
+ */
+.panel-default > .panel-heading:after {
+  background: $colour2-dark;
+}
+
+.panel-default > .panel-body {
+  border-top: 5px solid $colour2-dark;
+}
+
+/**
+ * ###Panels: Primary
+ */
+.panel-primary > .panel-heading:after {
+  background: $colour-accent-dark;
+}
+
+.panel-primary > .panel-body {
+  border-top: 5px solid $colour-accent-dark;
 }
