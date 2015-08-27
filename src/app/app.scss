@@ -3,6 +3,7 @@
  *   #General
  *   #Bootstrap Components
  *     ##Navbar
+ *     ##Jumbotron
  *     ##Panels
  */
 
@@ -30,6 +31,17 @@ hr {
  */
 .navbar {
   border-bottom: 5px solid #621628;
+}
+
+
+
+
+
+/**
+ * ##Jumbotron
+ */
+.jumbotron {
+  border-bottom: 5px solid #E5900B;
 }
 
 
