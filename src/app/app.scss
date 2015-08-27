@@ -22,10 +22,41 @@ body a {
 
 hr {
   height: 3px;
-  background: #A22543;
+  background: $colour2;
   border: 0;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.img-logo {
+  margin: 30px;
+}
+
+
+
+
+
+/**
+ * #Svgs =======================================================================
+ */
+.img-svg.img-svg-2-layer {
+  position: relative;
+}
+
+.img-svg .img-svg-foreground {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.img-svg .img-svg-background {
+  width: 100%;
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  z-index: 0;
 }
 
 
@@ -53,7 +84,24 @@ hr {
 .jumbotron {
   border-bottom: 5px solid #E5900B;
   color: $colour-text-dark;
+  position: relative;
   margin-bottom: 60px;
+  z-index: -1000;
+}
+
+.jumbotron .panel {
+  color: $colour-text-light;
+  background: $colour-page;
+
+  margin: 0;
+
+  &:after {
+    background: $colour-page-dark;
+  }
+}
+
+.jumbotron-home h1 {
+  font-size: 4rem;
 }
 
 
