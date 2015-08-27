@@ -10,6 +10,10 @@
 /**
  * #General ====================================================================
  */
+body {
+  padding-top: $navbar-height;
+}
+
 hr {
   height: 3px;
   background: #A22543;
