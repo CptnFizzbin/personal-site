@@ -27,9 +27,9 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #6B312D !default;
+$body-bg:               $colour-page !default;
 //** Global text color on `<body>`.
-$text-color:            #1E1E1E !default;
+$text-color:            $colour-text-dark !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -112,9 +112,9 @@ $border-radius-large:       15px !default;
 $border-radius-small:       5px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    #fff !default;
+$component-active-color:    $colour-text-light !default;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       $brand-primary !default;
+$component-active-bg:       $colour-accent !default;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 $caret-width-base:          4px !default;
@@ -369,22 +369,22 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #E6E6E6 !default;
-$navbar-default-bg:                #A22543 !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-color:             $colour-text-light !default;
+$navbar-default-bg:                $colour-accent !default;
+$navbar-default-border:            $colour-accent-dark !default;
 
 // Navbar links
-$navbar-default-link-color:                #777 !default;
-$navbar-default-link-hover-color:          #333 !default;
-$navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-color:                $colour-text-light !default;
+$navbar-default-link-hover-color:          $navbar-default-link-color !default;
+$navbar-default-link-hover-bg:             $colour-page !default;
+$navbar-default-link-active-color:         $navbar-default-link-color !default;
+$navbar-default-link-active-bg:            $colour-page !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-default-brand-color:               $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-brand-hover-color:         $navbar-default-brand-color !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -491,7 +491,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 
 $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   #F6B149 !default;
+$jumbotron-bg:                   $colour1 !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
@@ -707,7 +707,7 @@ $list-group-link-heading-color: #333 !default;
 //
 //##
 
-$panel-bg:                    #F6B149 !default;
+$panel-bg:                    $colour1 !default;
 $panel-body-padding:          15px !default;
 $panel-heading-padding:       10px 15px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
@@ -717,13 +717,13 @@ $panel-border-radius:         $border-radius-base !default;
 $panel-inner-border:          #ddd !default;
 $panel-footer-bg:             #f5f5f5 !default;
 
-$panel-default-text:          $gray-dark !default;
+$panel-default-text:          $colour-text-dark !default;
 $panel-default-border:        #E5900B !default;
-$panel-default-heading-bg:    #f5f5f5 !default;
+$panel-default-heading-bg:    $colour2 !default;
 
-$panel-primary-text:          #fff !default;
+$panel-primary-text:          $colour-text-light !default;
 $panel-primary-border:        $panel-default-border !default;
-$panel-primary-heading-bg:    $brand-primary !default;
+$panel-primary-heading-bg:    $colour-accent !default;
 
 $panel-success-text:          $state-success-text !default;
 $panel-success-border:        $state-success-border !default;
