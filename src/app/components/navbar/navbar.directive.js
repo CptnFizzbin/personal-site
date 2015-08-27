@@ -3,10 +3,10 @@
 
   angular
     .module('portfolio')
-    .directive('acmeNavbar', acmeNavbar);
+    .directive('spyNavbar', spyNavbar);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function spyNavbar() {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html'
