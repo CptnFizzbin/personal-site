@@ -7,6 +7,7 @@
 
   /** @ngInject */
   function routeConfig($urlRouterProvider) {
+    $urlRouterProvider.when('', '/');
     $urlRouterProvider.otherwise('/error/404');
   }
 
