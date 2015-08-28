@@ -28,8 +28,17 @@ hr {
   margin-bottom: 10px;
 }
 
-.img-logo {
-  margin: 30px;
+.img-svg {
+  width: 100%;
+}
+
+.navbar-brand > .logo-brand {
+  margin-top: -5px;
+  margin-right: 10px;
+  height: 30px;
+  display: inline-block;
+}
+
 .logo-jumbotron {
   padding: 30px;
   padding-bottom: 0;
@@ -194,6 +203,10 @@ $panel-heading-overhang: 20px;
   margin: 0;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.panel a {
+  color: $colour-accent;
 }
 
 /**
