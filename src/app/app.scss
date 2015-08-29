@@ -114,6 +114,10 @@ hr {
   }
 }
 
+.jumbotron .panel > .panel-body {
+  border: none;
+}
+
 .jumbotron-home h1 {
   font-size: 4rem;
 }
@@ -209,6 +213,22 @@ $panel-heading-overhang: 20px;
   color: $colour4;
 }
 
+.panel > .panel-divider {
+  display: block;
+  height: 5px;
+  width: 100%;
+}
+
+.panel > .panel-body {
+  border: 1px solid $colour-white-dark;
+  border-radius: $border-radius-base;
+}
+
+.panel > .panel-heading ~ .panel-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 /**
  * ###Panels: Default
  */
@@ -216,8 +236,8 @@ $panel-heading-overhang: 20px;
   background: $colour2-dark;
 }
 
-.panel-default > .panel-body {
-  border-top: 5px solid $colour2-dark;
+.panel-default > .panel-divider {
+  background: $colour2-dark;
 }
 
 /**
@@ -227,6 +247,6 @@ $panel-heading-overhang: 20px;
   background: $colour4-dark;
 }
 
-.panel-primary > .panel-body {
-  border-top: 5px solid $colour4-dark;
+.panel-primary > .panel-divider {
+  background: $colour4-dark;
 }
