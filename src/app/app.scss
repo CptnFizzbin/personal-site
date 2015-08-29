@@ -1,0 +1,271 @@
+/**
+ * Contents ====================================================================
+ *   #General
+ *   #Bootstrap Components
+ *     ##Navbar
+ *     ##Jumbotron
+ *     ##Panels
+ *       ###Panels: Primary
+ */
+
+/**
+ * #General ====================================================================
+ */
+body {
+  padding-top: $navbar-height;
+  color: $colour-white;
+}
+
+body a {
+  color: $colour2;
+}
+
+hr {
+  height: 3px;
+  background: $colour2;
+  border: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.img-svg {
+  width: 100%;
+}
+
+.navbar-brand > .logo-brand {
+  margin-top: -5px;
+  margin-right: 10px;
+  height: 30px;
+  display: inline-block;
+}
+
+.logo-jumbotron {
+  padding: 30px;
+  padding-bottom: 0;
+
+  margin: auto;
+}
+
+ul.no-bullets {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+img {
+  margin-bottom: 10px;
+}
+
+
+
+/**
+ * #Svgs =======================================================================
+ */
+.img-svg.img-svg-2-layer {
+  position: relative;
+}
+
+.img-svg .img-svg-foreground {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.img-svg .img-svg-background {
+  width: 100%;
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  z-index: 0;
+}
+
+
+
+
+
+/**
+ * #Bootstrap Components =======================================================
+ */
+
+/**
+ * ##Navbar
+ */
+.navbar {
+  border-bottom: 5px solid #621628;
+}
+
+
+
+
+
+/**
+ * ##Jumbotron
+ */
+.jumbotron {
+  border-bottom: 5px solid #E5900B;
+  color: $colour-black;
+  position: relative;
+  margin-bottom: 60px;
+  z-index: -1000;
+}
+
+.jumbotron .panel {
+  color: $colour-white;
+  background: $colour5;
+
+  margin: 0;
+
+  &:after {
+    background: $colour5-dark;
+  }
+}
+
+.jumbotron .panel > .panel-body {
+  border: none;
+}
+
+.jumbotron-home h1 {
+  font-size: 4rem;
+}
+
+.jumbotron-left {
+  max-width: 350px;
+}
+
+.jumbotron-right {
+  max-width: 500px;
+  position: absolute;
+  right: 15px;
+}
+
+@media (max-width: $screen-sm-min) {
+  .jumbotron-left {
+    margin: auto;
+  }
+}
+
+
+
+
+
+/**
+ * ##Panels
+ */
+$panel-heading-overhang: 20px;
+
+.panel {
+  border: none;
+
+  margin-left: $panel-heading-overhang;
+  margin-right: $panel-heading-overhang;
+  margin-bottom: 60px;
+
+  color: $colour-black;
+
+  position: relative;
+
+  &:after{
+    content: "";
+    background: $colour-white-dark;
+
+    height: 40px;
+    width: 100%;
+
+    display: block;
+    position: absolute;
+    bottom: -5px;
+
+    border-radius: $border-radius-base;
+
+    z-index: -100;
+  }
+}
+
+.panel > .panel-heading {
+  margin-left: -$panel-heading-overhang;
+  margin-right: -$panel-heading-overhang;
+
+  position: relative;
+
+  border: none;
+  border-radius: $border-radius-base;
+
+  padding-left: $panel-heading-overhang;
+  padding-right: $panel-heading-overhang;
+
+  &:after{
+    content: "";
+
+    margin-left: -$panel-heading-overhang;
+
+    height: 40px;
+    width: 100%;
+
+    display: block;
+    position: absolute;
+    bottom: -10px;
+
+    border-radius: $border-radius-base;
+
+    z-index: -100;
+  }
+}
+
+.panel .panel-heading h2 {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.panel a {
+  color: $colour4;
+}
+
+.panel > .panel-divider {
+  display: block;
+  height: 5px;
+  width: 100%;
+}
+
+.panel > .panel-body {
+  border: 1px solid $colour-white-dark;
+  border-radius: $border-radius-base;
+}
+
+.panel > .panel-heading ~ .panel-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/**
+ * ###Panels: Default
+ */
+.panel-default > .panel-heading:after {
+  background: $colour2-dark;
+}
+
+.panel-default > .panel-divider {
+  background: $colour2-dark;
+}
+
+/**
+ * ###Panels: Primary
+ */
+.panel-primary > .panel-heading:after {
+  background: $colour4-dark;
+}
+
+.panel-primary > .panel-divider {
+  background: $colour4-dark;
+}

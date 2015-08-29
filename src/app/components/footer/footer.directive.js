@@ -3,13 +3,13 @@
 
   angular
     .module('portfolio')
-    .directive('spyNavbar', spyNavbar);
+    .directive('spyFooter', spyFooter);
 
   /** @ngInject */
-  function spyNavbar() {
+  function spyFooter() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/navbar/navbar.html'
+      templateUrl: 'app/components/footer/footer.html'
     };
 
     return directive;

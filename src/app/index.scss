@@ -1,11 +1,12 @@
 /**
- *  The import of foundation is made manually because there is still no links of the
- *  sass version in their bower.json...
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
  */
-@import 'styles/config/colours';
-@import 'styles/config/foundation';
+@import url(https://fonts.googleapis.com/css?family=Oxygen|Muli:300);
+@import 'colours';
+@import 'bootstrap';
 
-@import '../../bower_components/foundation/scss/foundation';
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
 /**
  *  Do not remove this comments bellow. It's the markers used by wiredep to inject

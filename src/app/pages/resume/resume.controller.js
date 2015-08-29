@@ -3,12 +3,10 @@
 
   angular
     .module('portfolio')
-    .run(runBlock);
+    .controller('ResumeController', ResumeController);
 
   /** @ngInject */
-  function runBlock($log) {
+  function ResumeController() {
 
-    $log.debug('runBlock end');
   }
-
 })();

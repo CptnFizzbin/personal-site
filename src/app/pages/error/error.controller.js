@@ -3,12 +3,10 @@
 
   angular
     .module('portfolio')
-    .run(runBlock);
+    .controller('ErrorController', ErrorController);
 
   /** @ngInject */
-  function runBlock($log) {
+  function ErrorController() {
 
-    $log.debug('runBlock end');
   }
-
 })();

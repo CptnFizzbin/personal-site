@@ -2,10 +2,6 @@
   'use strict';
 
   angular
-    .module('angular', [
-        'ui.router',
-        'mm.foundation',
-        'sticky'
-    ]);
+    .module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'ui.bootstrap']);
 
 })();

@@ -3,9 +3,26 @@
     "version": "0.12.1",
     "props": {
       "angularVersion": "~1.4.0",
-      "angularModules": [],
+      "angularModules": [
+        {
+          "key": "animate",
+          "module": "ngAnimate"
+        },
+        {
+          "key": "cookies",
+          "module": "ngCookies"
+        },
+        {
+          "key": "touch",
+          "module": "ngTouch"
+        },
+        {
+          "key": "sanitize",
+          "module": "ngSanitize"
+        }
+      ],
       "jQuery": {
-        "key": "jquery2"
+        "key": "none"
       },
       "resource": {
         "key": "none",
@@ -16,12 +33,12 @@
         "module": "ui.router"
       },
       "ui": {
-        "key": "foundation",
+        "key": "bootstrap",
         "module": null
       },
-      "foundationComponents": {
-        "key": "angular-foundation",
-        "module": "mm.foundation"
+      "bootstrapComponents": {
+        "key": "ui-bootstrap",
+        "module": "ui.bootstrap"
       },
       "cssPreprocessor": {
         "key": "node-sass",
@@ -36,7 +53,7 @@
         "key": "none",
         "extension": "html"
       },
-      "bootstrapComponents": {
+      "foundationComponents": {
         "name": null,
         "version": null,
         "key": null,
