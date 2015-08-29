@@ -10,6 +10,7 @@
     "angular-touch": "~1.4.0",
     "angular-ui-router": "~0.2.15",
     "animate.css": "~3.3.0",
+    "font-awesome": "~4.4.0",
     "bootstrap-sass-official": "~3.3.4"
   },
   "devDependencies": {
@@ -17,5 +18,13 @@
   },
   "resolutions": {
     "angular": "~1.4.0"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css",
+        "fonts/*"
+      ]
+    }
   }
 }

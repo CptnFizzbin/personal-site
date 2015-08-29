@@ -3,10 +3,10 @@
 
   angular
     .module('portfolio')
-    .controller('MainController', MainController);
+    .controller('ResumeController', ResumeController);
 
   /** @ngInject */
-  function MainController() {
+  function ResumeController() {
 
   }
 })();

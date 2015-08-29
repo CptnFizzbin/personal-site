@@ -46,7 +46,24 @@ hr {
   margin: auto;
 }
 
+ul.no-bullets {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 
+p {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+img {
+  margin-bottom: 10px;
+}
 
 
 
@@ -137,6 +154,8 @@ hr {
     margin: auto;
   }
 }
+
+
 
 
 
