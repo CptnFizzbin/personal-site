@@ -13,7 +13,7 @@
  */
 body {
   padding-top: $navbar-height;
-  color: $colour-text-light;
+  color: $colour-white;
 }
 
 body a {
@@ -97,20 +97,20 @@ hr {
  */
 .jumbotron {
   border-bottom: 5px solid #E5900B;
-  color: $colour-text-dark;
+  color: $colour-black;
   position: relative;
   margin-bottom: 60px;
   z-index: -1000;
 }
 
 .jumbotron .panel {
-  color: $colour-text-light;
-  background: $colour-page;
+  color: $colour-white;
+  background: $colour5;
 
   margin: 0;
 
   &:after {
-    background: $colour-page-dark;
+    background: $colour5-dark;
   }
 }
 
@@ -148,13 +148,13 @@ $panel-heading-overhang: 20px;
   margin-right: $panel-heading-overhang;
   margin-bottom: 60px;
 
-  color: $colour-text-dark;
+  color: $colour-black;
 
   position: relative;
 
   &:after{
     content: "";
-    background: $colour1-dark;
+    background: $colour-white-dark;
 
     height: 40px;
     width: 100%;
@@ -206,7 +206,7 @@ $panel-heading-overhang: 20px;
 }
 
 .panel a {
-  color: $colour-accent;
+  color: $colour4;
 }
 
 /**
@@ -224,9 +224,9 @@ $panel-heading-overhang: 20px;
  * ###Panels: Primary
  */
 .panel-primary > .panel-heading:after {
-  background: $colour-accent-dark;
+  background: $colour4-dark;
 }
 
 .panel-primary > .panel-body {
-  border-top: 5px solid $colour-accent-dark;
+  border-top: 5px solid $colour4-dark;
 }
