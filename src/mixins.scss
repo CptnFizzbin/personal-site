@@ -1,0 +1,24 @@
+@mixin tilted-bg($colour) {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+
+    background-color: $colour;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    left: -10px;
+
+    z-index: -10;
+
+    transform: skewX(-10deg);
+  }
+}
+
+@mixin section-header {
+  @include tilted-bg($colour3)
+}
