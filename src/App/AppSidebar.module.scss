@@ -1,0 +1,9 @@
+@import "../variables";
+
+.sidebar {
+  position: fixed;
+  z-index: 100;
+  width: 200px;
+  height: 100vh;
+  background-color: $colour1;
+}

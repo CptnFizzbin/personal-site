@@ -1,0 +1,24 @@
+@import "src/variables";
+
+.App {
+  display: grid;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+
+  grid-template-areas:
+    'sidebar main';
+
+  aside {
+    grid-area: sidebar;
+  }
+
+  main {
+    overflow: auto;
+    padding: 124px 24px 24px 24px;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+}

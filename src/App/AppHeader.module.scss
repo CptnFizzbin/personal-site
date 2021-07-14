@@ -3,13 +3,10 @@
 
 .header {
   display: flex;
+  align-items: flex-start;
 
-  align-items: center;
-
-  flex-direction: column;
-  justify-content: center;
-  padding: 16px;
-  vertical-align: center;
+  width: max-content;
+  margin-top: 16px;
 
   .name {
     @include tilted-bg($colour1);
@@ -17,7 +14,9 @@
     font-family: $font-display;
     font-size: 40px;
     font-weight: bold;
-    padding: 8px
+    padding-top: 8px;
+    padding-bottom: 16px;
+    padding-right: 16px;
   }
 
   .subtitle {
@@ -27,7 +26,7 @@
   }
 
   .profilePicture {
-    @include tilted-bg($colour2);
+    @include tilted-bg($colour3);
 
     position: relative;
 
@@ -36,9 +35,10 @@
     display: flex;
     justify-content: center;
 
-    width: 200px;
+    width: 100px;
     height: 100px;
     margin-bottom: 10px;
+    margin-left: 50px;
     padding: 16px;
     border-radius: 12px;
 

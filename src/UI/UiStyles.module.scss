@@ -1,0 +1,11 @@
+@import "../variables";
+@import "../mixins";
+
+.header {
+  @include tilted-bg($colour3);
+  padding: 16px;
+  color: $colour-white;
+  font-family: $font-display;
+  font-weight: bold;
+  font-size: 20px;
+}

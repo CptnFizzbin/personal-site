@@ -1,5 +1,5 @@
 {
-  "nv": {
+  "env": {
     "browser": true,
     "es2021": true
   },
@@ -20,7 +20,7 @@
     "react",
     "@typescript-eslint"
   ],
-  "ules": {
+  "rules": {
     "react/function-component-definition": [
       "error",
       {
