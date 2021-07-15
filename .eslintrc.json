@@ -28,8 +28,20 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none"
+        }
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
     "indent": [
       "error",
       2
