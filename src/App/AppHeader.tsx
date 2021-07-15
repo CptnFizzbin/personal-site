@@ -7,7 +7,7 @@ import appHeaderStyles from './AppHeader.module.scss'
 export { appHeaderStyles }
 
 interface HeaderProps {
-  expanded: boolean;
+  expanded: boolean
 }
 
 export const AppHeader: FC<HeaderProps> = ({

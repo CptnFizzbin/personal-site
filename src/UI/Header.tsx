@@ -5,7 +5,7 @@ import uiStyles from './UiStyles.module.scss'
 export { uiStyles }
 
 interface HeaderProps {
-  title: string;
+  title: string
 }
 
 export const Header: FC<HeaderProps> = ({ title }) =>
