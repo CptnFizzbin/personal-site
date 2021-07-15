@@ -1,0 +1,23 @@
+@import "../mixins";
+@import "../variables";
+
+.TechItem {
+  padding: 4px;
+  display: inline-block;
+}
+
+.StrengthBar {
+}
+
+.StrengthBarSegment {
+  @include tilted-bg($colour-white-dark);
+
+  display: inline-block;
+  width: 20px;
+  height: 5px;
+  margin-right: 4px;
+
+  &.filled::before {
+    background-color: $colour2;
+  }
+}
