@@ -6,10 +6,11 @@ import { SectionProps } from './SectionProps'
 import styles from './Interests.module.scss'
 
 const interests: string[] = [
-  'Front-end Web Design',
-  'Security Focused Development',
+  'Web Design',
+  'Web Security',
   'UX Design',
-  'Video and Board Games',
+  'Video Games',
+  'Board Games',
   'DnD',
 ]
 
