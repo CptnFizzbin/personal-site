@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import footerStyles from './AppFooter.module.scss'
+import footerStyles from './PageFooter.module.scss'
 
-export const AppFooter: FC = () => {
+export const PageFooter: FC = () => {
   return (
     <footer className={footerStyles.footer}>
       Footer!

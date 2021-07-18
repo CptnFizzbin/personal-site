@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './App/App'
+import Page from './Page/Page'
 import reportWebVitals from './reportWebVitals'
 
 import './index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Page />
   </React.StrictMode>,
   document.getElementById('root'),
 )

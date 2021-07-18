@@ -2,7 +2,7 @@ import { FC } from 'react'
 import classNames from 'classnames'
 
 import profilePicture from './avatar.png'
-import appHeaderStyles from './AppHeader.module.scss'
+import appHeaderStyles from './PageHeader.module.scss'
 
 export { appHeaderStyles }
 
@@ -10,7 +10,7 @@ interface HeaderProps {
   expanded: boolean
 }
 
-export const AppHeader: FC<HeaderProps> = ({
+export const PageHeader: FC<HeaderProps> = ({
   expanded,
 }) => {
   return (

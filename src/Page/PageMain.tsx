@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 import { Technologies } from '../Technologies/Technologies'
 
-import mainStyle from './AppMain.module.scss'
+import mainStyle from './PageMain.module.scss'
 
-export const AppMain: FC = () => {
+export const PageMain: FC = () => {
   return (
     <div className={mainStyle.main}>
       <Technologies />
