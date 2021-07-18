@@ -15,11 +15,10 @@ export const AppHeader: FC<HeaderProps> = ({
 }) => {
   return (
     <div
-      className={classNames(
-        appHeaderStyles.header, {
-          [appHeaderStyles.expanded]: expanded,
-        },
-      )}
+      className={classNames({
+        [appHeaderStyles.header]: true,
+        [appHeaderStyles.expanded]: expanded,
+      })}
     >
       <div className={appHeaderStyles.profilePicture}>
         <img src={profilePicture} alt="Stephen A. Wilson's avatar" />
