@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import { Header } from '../UI/Header'
 import { StrengthBar } from '../UI/StrengthBar'
+import { SectionProps } from './SectionProps'
 
 import styles from './Technologies.module.scss'
 
@@ -24,27 +25,29 @@ const techList: Technology[] = [
   { name: 'Git', strength: 80 },
 ]
 
-export const Technologies: FC = () => {
+export const Technologies: FC<SectionProps> = ({
+  gridArea,
+}) => {
   return (
-    <>
+    <div className={styles.Technologies} style={{ gridArea }}>
       <Header title="Technologies" />
-      <div className={styles.TechList}>
-        {techList.map(tech => <TechItem key={tech.name} tech={tech} />)}
+      <div className={styles.List}>
+        {techList.map(tech => <ListItem key={tech.name} tech={tech} />)}
       </div>
-    </>
+    </div>
   )
 }
 
-interface TechItemProps {
+interface ListItemProps {
   tech: Technology
 }
 
-export const TechItem: FC<TechItemProps> = ({
+export const ListItem: FC<ListItemProps> = ({
   tech,
 }) => {
   return (
-    <div className={styles.TechItem}>
-      <div className={styles.TechItemName}>{tech.name}</div>
+    <div className={styles.ListItem}>
+      <div className={styles.ListItemName}>{tech.name}</div>
       <StrengthBar strength={tech.strength} />
     </div>
   )

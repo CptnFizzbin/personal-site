@@ -1,4 +1,21 @@
 @import "../AppStyles/index";
 
 .PageMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'technologies interests'
+    'experience   experience'
+    'projects     projects'
+    'education    education';
+
+  @media screen and (max-width: $screen-size-sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'technologies'
+    'interests'
+    'experience'
+    'projects'
+    'education ';
+  }
 }
