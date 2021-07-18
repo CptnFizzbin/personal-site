@@ -4,11 +4,11 @@ import { PageSidebar } from './PageSidebar'
 import { PageMain } from './PageMain'
 import { PageFooter } from './PageFooter'
 
-import appStyles from './Page.module.scss'
+import styles from './Page.module.scss'
 
 const Page: FC = () => {
   return (
-    <div className={appStyles.App}>
+    <div className={styles.Page}>
       <aside>
         <PageSidebar />
       </aside>

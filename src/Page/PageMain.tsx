@@ -1,12 +1,12 @@
 import { FC } from 'react'
 
-import { Technologies } from '../Technologies/Technologies'
+import { Technologies } from '../Sections/Technologies'
 
-import mainStyle from './PageMain.module.scss'
+import styles from './PageMain.module.scss'
 
 export const PageMain: FC = () => {
   return (
-    <div className={mainStyle.main}>
+    <div className={styles.PageMain}>
       <Technologies />
     </div>
   )

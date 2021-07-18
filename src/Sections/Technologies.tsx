@@ -1,9 +1,14 @@
 import { FC } from 'react'
+
 import { Header } from '../UI/Header'
-import { TechItem } from './TechItem'
-import { Technology } from './Technology'
+import { StrengthBar } from '../UI/StrengthBar'
 
 import styles from './Technologies.module.scss'
+
+export interface Technology {
+  name: string
+  strength: number
+}
 
 const techList: Technology[] = [
   { name: 'JavaScript', strength: 80 },
@@ -30,3 +35,17 @@ export const Technologies: FC = () => {
   )
 }
 
+interface TechItemProps {
+  tech: Technology
+}
+
+export const TechItem: FC<TechItemProps> = ({
+  tech,
+}) => {
+  return (
+    <div className={styles.TechItem}>
+      <div className={styles.TechItemName}>{tech.name}</div>
+      <StrengthBar strength={tech.strength} />
+    </div>
+  )
+}

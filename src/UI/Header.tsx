@@ -1,13 +1,11 @@
 import { FC } from 'react'
 
-import uiStyles from './UiStyles.module.scss'
-
-export { uiStyles }
+import styles from './Header.module.scss'
 
 interface HeaderProps {
   title: string
 }
 
 export const Header: FC<HeaderProps> = ({ title }) =>
-  <div className={uiStyles.header}>{title}</div>
+  <div className={styles.Header}>{title}</div>
 

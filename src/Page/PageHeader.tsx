@@ -2,9 +2,7 @@ import { FC } from 'react'
 import classNames from 'classnames'
 
 import profilePicture from './avatar.png'
-import appHeaderStyles from './PageHeader.module.scss'
-
-export { appHeaderStyles }
+import styles from './PageHeader.module.scss'
 
 interface HeaderProps {
   expanded: boolean
@@ -16,18 +14,18 @@ export const PageHeader: FC<HeaderProps> = ({
   return (
     <div
       className={classNames({
-        [appHeaderStyles.header]: true,
-        [appHeaderStyles.expanded]: expanded,
+        [styles.PageHeader]: true,
+        [styles.expanded]: expanded,
       })}
     >
-      <div className={appHeaderStyles.profilePicture}>
+      <div className={styles.profilePicture}>
         <img src={profilePicture} alt="Stephen A. Wilson's avatar" />
       </div>
 
-      <div className={appHeaderStyles.name}>
+      <div className={styles.name}>
         Stephen A. Wilson
 
-        <div className={appHeaderStyles.subtitle}>
+        <div className={styles.subtitle}>
           Full-Stack Developer
         </div>
       </div>

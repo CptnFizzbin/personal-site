@@ -1,29 +1,13 @@
 import { FC } from 'react'
-import { Technology } from './Technology'
 import classNames from 'classnames'
 
-import styles from './TechItem.module.scss'
-
-interface TechItemProps {
-  tech: Technology
-}
-
-export const TechItem: FC<TechItemProps> = ({
-  tech,
-}) => {
-  return (
-    <div className={styles.TechItem}>
-      <div className={styles.TechItemName}>{tech.name}</div>
-      <StrengthBar strength={tech.strength} />
-    </div>
-  )
-}
+import styles from './StrengthBar.module.scss'
 
 interface StrengthBarProps {
   strength: number
 }
 
-const StrengthBar: FC<StrengthBarProps> = ({
+export const StrengthBar: FC<StrengthBarProps> = ({
   strength,
 }) => {
   const MAX_STRENGTH = 5
