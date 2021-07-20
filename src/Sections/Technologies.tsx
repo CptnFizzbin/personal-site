@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
 import { Header } from '../UI/Header'
+import { Section } from './Section'
 import { StrengthBar } from '../UI/StrengthBar'
-import { SectionProps } from './SectionProps'
 
 import styles from './Technologies.module.scss'
 
@@ -25,16 +25,14 @@ const techList: Technology[] = [
   { name: 'Git', strength: 80 },
 ]
 
-export const Technologies: FC<SectionProps> = ({
-  gridArea,
-}) => {
+export const Technologies: FC = () => {
   return (
-    <div className={styles.Technologies} style={{ gridArea }}>
+    <Section className={styles.Technologies}>
       <Header title="Technologies" />
       <div className={styles.List}>
         {techList.map(tech => <ListItem key={tech.name} tech={tech} />)}
       </div>
-    </div>
+    </Section>
   )
 }
 

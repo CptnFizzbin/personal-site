@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import { Header } from '../UI/Header'
-import { SectionProps } from './SectionProps'
+import { Section } from './Section'
 
 import styles from './Interests.module.scss'
 
@@ -14,17 +14,15 @@ const interests: string[] = [
   'DnD',
 ]
 
-export const Interests: FC<SectionProps> = ({
-  gridArea,
-}) => {
+export const Interests: FC = () => {
   return (
-    <div className={styles.Interests} style={{ gridArea }}>
+    <Section className={styles.Interests}>
       <Header title="Interests" />
       <div className={styles.List}>
         {interests.map(
           interest => <ListItem key={interest} interest={interest} />)}
       </div>
-    </div>
+    </Section>
   )
 }
 

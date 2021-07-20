@@ -3,5 +3,6 @@
 .PageMain {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 24px 24px;
+  align-content: flex-start;
+  margin: 0 24px 24px;
 }

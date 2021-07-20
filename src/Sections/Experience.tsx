@@ -1,16 +1,14 @@
 import { FC } from 'react'
 
 import { Header } from '../UI/Header'
-import { SectionProps } from './SectionProps'
+import { Section } from './Section'
 
 import styles from './Experience.module.scss'
 
-export const Experience: FC<SectionProps> = ({
-  gridArea,
-}) => {
+export const Experience: FC = () => {
   return (
-    <div className={styles.Experience} style={{ gridArea }}>
+    <Section className={styles.Experience}>
       <Header title="Experience" />
-    </div>
+    </Section>
   )
 }

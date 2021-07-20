@@ -11,11 +11,11 @@ import styles from './PageMain.module.scss'
 export const PageMain: FC = () => {
   return (
     <div className={styles.PageMain}>
-      <Technologies gridArea={'technologies'} />
-      <Interests gridArea={'interests'} />
-      <Experience gridArea={'experience'} />
-      <Projects gridArea={'projects'} />
-      <Education gridArea={'education'} />
+      <Technologies />
+      <Interests />
+      <Experience />
+      <Projects />
+      <Education />
     </div>
   )
 }

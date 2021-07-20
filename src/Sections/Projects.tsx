@@ -1,15 +1,14 @@
 import { FC } from 'react'
-import { SectionProps } from './SectionProps'
+
+import { Header } from '../UI/Header'
+import { Section } from './Section'
 
 import styles from './Projects.module.scss'
-import { Header } from '../UI/Header'
 
-export const Projects: FC<SectionProps> = ({
-  gridArea,
-}) => {
+export const Projects: FC = () => {
   return (
-    <div className={styles.Projects} style={{ gridArea }}>
+    <Section className={styles.Projects}>
       <Header title="Projects" />
-    </div>
+    </Section>
   )
 }
