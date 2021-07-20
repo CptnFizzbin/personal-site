@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto&display=swap');
 
+$sidebar-width: 200px;
+
 $screen-size-sm: 800px;
 
 $font-display: "gruppo", sans-serif;
@@ -24,3 +26,6 @@ $colour-white:      #FCFCFC;
 $colour-white-dark: darken($colour-white, 10%);
 $colour-black:      #1E1E1E;
 $colour-black-dark: darken($colour-black, 10%);
+
+$colour-header: $colour3;
+$colour-sidebar: $colour1;

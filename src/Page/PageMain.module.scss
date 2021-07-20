@@ -9,6 +9,8 @@
     'projects     projects'
     'education    education';
 
+  padding: 0 24px 24px;
+
   @media screen and (max-width: $screen-size-sm) {
     grid-template-columns: 1fr;
     grid-template-areas:

@@ -1,23 +1,11 @@
 import { FC } from 'react'
-import classNames from 'classnames'
 
 import profilePicture from './avatar.png'
 import styles from './PageHeader.module.scss'
 
-interface HeaderProps {
-  expanded: boolean
-}
-
-export const PageHeader: FC<HeaderProps> = ({
-  expanded,
-}) => {
+export const PageHeader: FC = () => {
   return (
-    <div
-      className={classNames({
-        [styles.PageHeader]: true,
-        [styles.expanded]: expanded,
-      })}
-    >
+    <div className={styles.PageHeader}>
       <div className={styles.profilePicture}>
         <img src={profilePicture} alt="Stephen A. Wilson's avatar" />
       </div>

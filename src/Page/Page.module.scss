@@ -5,24 +5,25 @@
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 200px 1fr;
 
   grid-template-areas:
+    'header header'
     'sidebar main';
+}
 
-  @media screen and (max-width: $screen-size-sm) {
+.areaHeader {
+  grid-area: header;
+}
 
-  }
+.areaSidebar {
+  grid-area: sidebar;
+}
 
-  aside {
-    grid-area: sidebar;
-  }
-
-  main {
-    overflow: auto;
-    padding: 124px 24px 24px 24px;
-    grid-area: main;
-    display: grid;
-    grid-template-rows: 1fr auto;
-  }
+.areaMain {
+  grid-area: main;
+  display: grid;
+  overflow: auto;
+  grid-template-rows: 1fr auto;
 }
