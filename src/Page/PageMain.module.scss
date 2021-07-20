@@ -1,23 +1,7 @@
 @import "../AppStyles/index";
 
 .PageMain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    'technologies interests'
-    'experience   experience'
-    'projects     projects'
-    'education    education';
-
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 24px 24px;
-
-  @media screen and (max-width: $screen-size-sm) {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    'technologies'
-    'interests'
-    'experience'
-    'projects'
-    'education ';
-  }
 }
