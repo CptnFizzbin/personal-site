@@ -11,6 +11,13 @@
   grid-template-areas:
     'header header'
     'sidebar main';
+
+  @media screen and (max-width: $screen-size-sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'header'
+    'main';
+  }
 }
 
 .areaHeader {
@@ -22,8 +29,8 @@
 }
 
 .areaMain {
-  grid-area: main;
   display: grid;
   overflow: auto;
+  grid-area: main;
   grid-template-rows: 1fr auto;
 }
