@@ -1,8 +1,9 @@
 import { FC } from 'react'
+
+import { NamePlate } from '../../Page/NamePlate'
 import { ProfilePicture } from '../../Page/ProfilePicture'
 
 import styles from './Overview.module.scss'
-import { NamePlate } from '../../Page/NamePlate'
 
 export const Overview: FC = () => {
   return (

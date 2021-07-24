@@ -1,7 +1,9 @@
 import { FC } from 'react'
-import styles from './PageHeader.module.scss'
-import { ProfilePicture } from './ProfilePicture'
+
 import { NamePlate } from './NamePlate'
+import { ProfilePicture } from './ProfilePicture'
+
+import styles from './PageHeader.module.scss'
 
 export const PageHeader: FC = () => {
   return (

@@ -5,6 +5,7 @@ import { Section } from './Section'
 
 import styles from './Education.module.scss'
 
+
 export const Education: FC = () => {
   return (
     <Section className={styles.Education}>

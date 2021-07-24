@@ -1,11 +1,11 @@
 import { FC } from 'react'
 
-import { Overview } from '../Sections/Overview'
-import { Technologies } from '../Sections/Technologies'
-import { Interests } from '../Sections/Interests'
-import { Experience } from '../Sections/Experience'
-import { Projects } from '../Sections/Projects'
 import { Education } from '../Sections/Education'
+import { Experience } from '../Sections/Experience'
+import { Interests } from '../Sections/Interests'
+import { Overview } from '../Sections/Overview'
+import { Projects } from '../Sections/Projects'
+import { Technologies } from '../Sections/Technologies'
 
 import styles from './PageMain.module.scss'
 

@@ -1,5 +1,5 @@
-import { FC } from 'react'
 import classNames from 'classnames'
+import { FC } from 'react'
 
 import styles from './Section.module.scss'
 

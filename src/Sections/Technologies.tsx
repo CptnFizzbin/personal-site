@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
 import { Header } from '../UI/Header'
-import { Section } from './Section'
 import { StrengthBar } from '../UI/StrengthBar'
+import { Section } from './Section'
 
 import styles from './Technologies.module.scss'
 

@@ -5,6 +5,7 @@ import { Section } from './Section'
 
 import styles from './Interests.module.scss'
 
+
 const interests: string[] = [
   'Web Design',
   'Web Security',

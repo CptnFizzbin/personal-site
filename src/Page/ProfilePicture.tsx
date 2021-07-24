@@ -1,8 +1,9 @@
+import classNames from 'classnames'
 import { FC } from 'react'
 
 import profilePicture from './avatar.png'
+
 import styles from './ProfilePicture.module.scss'
-import classNames from 'classnames'
 
 interface ProfilePictureProps {
   width?: number

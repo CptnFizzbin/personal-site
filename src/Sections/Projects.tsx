@@ -5,6 +5,7 @@ import { Section } from './Section'
 
 import styles from './Projects.module.scss'
 
+
 export const Projects: FC = () => {
   return (
     <Section className={styles.Projects}>
