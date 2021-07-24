@@ -1,0 +1,16 @@
+@import "../AppStyles/index";
+
+.NamePlate {
+  @include tilted-bg($colour1);
+
+  font-family: $font-display;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 8px 16px 16px;
+
+  .subtitle {
+    font-family: $font-display;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

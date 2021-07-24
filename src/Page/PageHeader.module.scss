@@ -25,39 +25,4 @@
       width: 100%;
     }
   }
-
-  .name {
-    @include tilted-bg($colour1);
-
-    font-family: $font-display;
-    font-size: 40px;
-    font-weight: bold;
-    padding: 8px 16px 16px;
-  }
-
-  .subtitle {
-    font-family: $font-display;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .profilePicture {
-    @include tilted-bg($colour3);
-
-    position: relative;
-
-    z-index: 10;
-
-    display: flex;
-    justify-content: center;
-
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    padding: 16px;
-    border-radius: 12px;
-
-    img { height: 100%; }
-  }
 }

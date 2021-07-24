@@ -1,0 +1,22 @@
+@import "../AppStyles/index";
+
+.ProfilePicture {
+  position: relative;
+
+  z-index: 10;
+
+  display: flex;
+
+  justify-content: center;
+  margin-bottom: 10px;
+
+  margin-left: 50px;
+  padding: 16px;
+  border-radius: 12px;
+
+  &.bg { @include tilted-bg($colour3); }
+
+  img {
+    width: 100%;
+  }
+}
