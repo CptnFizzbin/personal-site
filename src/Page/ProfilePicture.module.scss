@@ -1,6 +1,7 @@
 @import "../AppStyles/index";
 
 .ProfilePicture {
+  @include tilted-bg($colour3);
   position: relative;
 
   z-index: 10;
@@ -13,8 +14,6 @@
   margin-left: 50px;
   padding: 16px;
   border-radius: 12px;
-
-  &.bg { @include tilted-bg($colour3); }
 
   img {
     width: 100%;

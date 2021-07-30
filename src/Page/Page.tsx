@@ -1,25 +1,28 @@
 import { FC } from 'react'
 
+import { Overview } from '../Sections/Overview'
 import { PageFooter } from './PageFooter'
 import { PageHeader } from './PageHeader'
 import { PageMain } from './PageMain'
-import { PageSidebar } from './PageSidebar'
 
 import styles from './Page.module.scss'
 
 const Page: FC = () => {
   return (
     <div className={styles.Page}>
-      <header className={styles.areaHeader}>
-        <PageHeader/>
+      <PageHeader />
+
+      <header>
+        <Overview />
       </header>
-      <aside className={styles.areaSidebar}>
-        <PageSidebar />
-      </aside>
-      <main className={styles.areaMain}>
+
+      <main>
         <PageMain />
-        <PageFooter />
       </main>
+
+      <footer>
+        <PageFooter />
+      </footer>
     </div>
   )
 }

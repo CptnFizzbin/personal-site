@@ -1,57 +1,10 @@
 @import "../AppStyles/index";
 
 .Page {
-  display: grid;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 200px 1fr;
+  width: 100%;
 
-  grid-template-areas:
-    'header main'
-    'sidebar main';
-}
-
-.areaHeader {
-  width: 100vw;
-  pointer-events: none;
-  grid-area: header;
-}
-
-.areaSidebar {
-  grid-area: sidebar;
-}
-
-.areaMain {
-  display: grid;
-  overflow: auto;
-  grid-area: main;
-  grid-template-rows: 1fr auto;
-}
-
-@media screen and (max-width: $screen-size-sm) {
-  .Page {
-    display: flex;
-    overflow: auto;
-    overflow-x: hidden;
-    flex-flow: column;
-    width: 100%;
-  }
-
-  .areaHeader {
-    width: 100%;
-  }
-
-  .areaSidebar {
-    display: none;
-  }
-
-  .areaMain {
-    overflow: visible;
-    flex-grow: 1;
-    width: 100%;
-    height: auto;
-    padding-top: 0;
+  main {
+    margin: auto;
+    max-width: 1024px;
   }
 }
