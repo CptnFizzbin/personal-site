@@ -1,7 +1,7 @@
 @import "../AppStyles/index";
 
 .Technologies {
-  width: 50%;
+
 }
 
 .List {
@@ -10,6 +10,7 @@
 }
 
 .ListItem {
+  flex-basis: 33%;
   padding: 4px;
   display: inline-block;
 }

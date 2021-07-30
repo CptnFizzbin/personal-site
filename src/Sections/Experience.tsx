@@ -39,19 +39,13 @@ const jobs: Job[] = [
     title: 'Jr. Full-Stack Developer',
     timeframe: '2015',
     tech: [
-      'Ruby + Rails',
-      'Java + Spring',
-      'Python + Flask',
-      'Postgres',
-      'SQL Server',
-      'React',
+      'Node + Sails',
+      'AngularJS',
+      'MongoDB',
     ],
     tasks: [
-      'Worked with product managers to develop and maintain internal applications for process management.',
-      'Lead Developer on a Java/Spring project and a Python/Flask project.',
-      'Reverse engineered databases for migrations to an internal test case management system.',
-      'Maintained and upgraded legacy Rails application.',
-      'Investigated new technologies for use in the team.',
+      'Developing the backend systems using Node and Sails.js to run the front end angular applications. ',
+      'System administrator for their staging and production servers.',
     ],
   },
 ]
@@ -60,14 +54,23 @@ export const Experience: FC = () => {
   return (
     <Section className={styles.Experience}>
       <Header title="Experience" />
-      {jobs.map(job => (
-        <div key={job.company}>
-          <div>{job.company} | {job.timeframe}</div>
-          <div><em>{job.title}</em></div>
-          <div>{job.tech}</div>
-          <div>{job.tasks}</div>
-        </div>
-      ))}
+      <div className={styles.Placements}>
+        {jobs.map(job => (
+          <div key={job.company} className={styles.Placement}>
+            <div className={styles.PlacementHeader}>
+              <div className={styles.Company}>{job.company}</div>
+              <div className={styles.Duration}>{job.timeframe}</div>
+            </div>
+            <div className={styles.Title}>{job.title}</div>
+            <div className={styles.Technologies}>
+              {job.tech.map(tech => <div key={tech} className={styles.Item}>{tech}</div>)}
+            </div>
+            <div className={styles.Tasks}>
+              {job.tasks.map(task => <div key={task} className={styles.Item}>{task}</div>)}
+            </div>
+          </div>
+        ))}
+      </div>
     </Section>
   )
 }

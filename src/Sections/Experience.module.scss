@@ -1,5 +1,66 @@
 @import "../AppStyles/index";
 
 .Experience {
-  width: 100%;
+  .Placements {
+    display: flex;
+    gap: 16px;
+  }
+
+  .Placement {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .PlacementHeader {
+      @include tilted-bg($colour4);
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 4px 8px;
+      color: $colour-white;
+
+      .Company {
+        font-size: 18px;
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      .Duration {
+        display: inline-block;
+        margin-left: 16px;
+      }
+    }
+
+    .Title {
+      font-size: 14px;
+      font-style: italic;
+      width: 100%;
+    }
+
+    .Technologies {
+      width: 120px;
+
+      .Item {
+        margin-top: 4px;
+      }
+    }
+
+    .Tasks {
+      width: calc(100% - 120px);
+      padding-left: 8px;
+
+      .Item {
+        $bullet-size: 12px;
+        position: relative;
+        margin-top: 4px;
+        padding-left: $bullet-size;
+
+        &::before {
+          position: absolute;
+          left: -$bullet-size;
+          content: "➔"
+        }
+      }
+    }
+  }
 }

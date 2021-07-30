@@ -11,8 +11,12 @@ import styles from './PageMain.module.scss'
 export const PageMain: FC = () => {
   return (
     <div className={styles.PageMain}>
-      <Technologies />
-      <Interests />
+      <div className={styles.col2}>
+        <Technologies />
+      </div>
+      <div className={styles.col1}>
+        <Interests />
+      </div>
       <Experience />
       <Projects />
       <Education />
