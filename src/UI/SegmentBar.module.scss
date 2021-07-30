@@ -1,0 +1,55 @@
+@import "../AppStyles/index";
+
+.Container {
+  position: relative;
+  width: 100%;
+  height: 18px;
+}
+
+.Container,
+.SegmentBarHover {
+  &:hover .Label {
+    opacity: 100%;
+  }
+}
+
+.Bar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.Segment {
+  @include tilted-bg($colour-white-dark, false);
+
+  flex-grow: 1;
+  height: 100%;
+  margin-left: 2px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &.filled::before {
+    background-color: $colour2;
+  }
+}
+
+.Label {
+  @include tilted-bg($colour4, false);
+  font-size: 12px;
+
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+  padding: 2px 2px 2px 4px;
+  transition: opacity 250ms;
+
+  opacity: 0;
+  color: $colour-white;
+}

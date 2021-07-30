@@ -1,28 +1,29 @@
+import classNames from 'classnames'
 import { FC } from 'react'
 
 import { Header } from '../UI/Header'
-import { StrengthBar } from '../UI/StrengthBar'
+import { SegmentBar, SegmentBarHover } from '../UI/SegmentBar'
 import { Section } from './Section'
 
 import styles from './Technologies.module.scss'
 
 export interface Technology {
   name: string
-  strength: number
+  years: number
 }
 
 const techList: Technology[] = [
-  { name: 'JavaScript', strength: 80 },
-  { name: 'TypeScript', strength: 80 },
-  { name: 'React', strength: 70 },
-  { name: 'CSS', strength: 60 },
-  { name: 'SCSS', strength: 60 },
-  { name: 'Bootstrap', strength: 80 },
-  { name: 'Ruby', strength: 80 },
-  { name: 'Node', strength: 80 },
-  { name: 'Python', strength: 60 },
-  { name: 'Java', strength: 50 },
-  { name: 'Git', strength: 80 },
+  { name: 'JavaScript', years: 8 },
+  { name: 'TypeScript', years: 3 },
+  { name: 'React', years: 4 },
+  { name: 'CSS', years: 8 },
+  { name: 'SCSS', years: 8 },
+  { name: 'Bootstrap', years: 8 },
+  { name: 'Ruby', years: 8 },
+  { name: 'Node', years: 6 },
+  { name: 'Python', years: 3 },
+  { name: 'Java', years: 1 },
+  { name: 'Git', years: 8 },
 ]
 
 export const Technologies: FC = () => {
@@ -44,9 +45,13 @@ export const ListItem: FC<ListItemProps> = ({
   tech,
 }) => {
   return (
-    <div className={styles.ListItem}>
+    <div className={classNames(styles.ListItem, SegmentBarHover)}>
       <div className={styles.ListItemName}>{tech.name}</div>
-      <StrengthBar strength={tech.strength} />
+      <SegmentBar
+        value={tech.years}
+        segments={10}
+        label={`${tech.years} ${tech.years > 1 ? 'years' : 'year'}`}
+      />
     </div>
   )
 }
