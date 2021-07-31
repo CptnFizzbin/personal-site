@@ -1,7 +1,6 @@
 import { FC } from 'react'
 
-import { Avatar } from '../../Images/Avatar'
-import { ReactLogo, RubyLogo, TypeScriptLogo } from '../../Images/Logos'
+import { Avatar , ReactLogo, RubyLogo, TypeScriptLogo } from '../../Images'
 import { NamePlate } from '../../Page/NamePlate'
 import scrollDownImg from './scroll-down.png'
 

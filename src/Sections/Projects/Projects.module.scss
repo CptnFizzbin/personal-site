@@ -1,0 +1,39 @@
+@import "../../AppStyles/index";
+
+.Projects {
+  background-color: $colour-white-dark;
+}
+
+.ProjectList {
+  margin-top: 16px;
+}
+
+.Project {
+  display: flex;
+  flex-wrap: wrap;
+
+  .Title {
+    @include tilted-bg($colour4);
+    font-size: 18px;
+    font-weight: bold;
+    color: $colour-white;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .Image {
+    width: 50%;
+    display: inline-block;
+    padding: 16px;
+
+    img {
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+
+  .Description {
+    width: 50%;
+    display: inline-block;
+  }
+}

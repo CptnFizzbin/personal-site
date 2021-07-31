@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { Avatar } from '../Images/Avatar'
+import { Avatar } from '../Images'
 
 import styles from './ProfilePicture.module.scss'
 
