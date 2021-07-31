@@ -11,6 +11,12 @@
   &:hover .Label {
     opacity: 100%;
   }
+
+  @media screen and (max-width: $screen-size-sm) {
+    .Label {
+      opacity: 100%;
+    }
+  }
 }
 
 .Bar {

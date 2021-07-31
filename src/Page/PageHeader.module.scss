@@ -20,8 +20,6 @@
   }
 
   @media screen and (max-width: $screen-size-sm) {
-    &::before {
-      width: 100%;
-    }
+    opacity: 0 !important;
   }
 }

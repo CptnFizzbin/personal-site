@@ -7,6 +7,11 @@
     margin-top: 24px;
     display: flex;
     gap: 16px;
+
+    @media screen and (max-width: $screen-size-sm) {
+      flex-wrap: wrap;
+      width: 100%;
+    }
   }
 
   .Placement {
