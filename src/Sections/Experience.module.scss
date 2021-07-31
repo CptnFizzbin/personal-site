@@ -1,7 +1,10 @@
 @import "../AppStyles/index";
 
 .Experience {
+  background-color: $colour-white-dark;
+
   .Placements {
+    margin-top: 24px;
     display: flex;
     gap: 16px;
   }
@@ -19,21 +22,31 @@
       padding: 4px 8px;
       color: $colour-white;
 
-      .Company {
-        font-size: 18px;
-        font-weight: bold;
-        display: inline-block;
-      }
+    }
 
-      .Duration {
-        display: inline-block;
-        margin-left: 16px;
-      }
+    .Company {
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .Duration {
+      display: inline-block;
+      margin-left: 8px;
     }
 
     .Title {
+      border-bottom: 4px solid $colour4;
+      padding: 4px;
       font-size: 14px;
       font-style: italic;
+      width: 100%;
+    }
+
+    .Icons {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
       width: 100%;
     }
 

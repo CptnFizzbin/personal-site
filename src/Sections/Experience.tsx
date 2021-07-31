@@ -1,5 +1,6 @@
-import { FC } from 'react'
+import { ComponentType, FC } from 'react'
 
+import * as Logos from '../Images/Logos'
 import { Header } from '../UI/Header'
 import { Section } from './Section'
 
@@ -11,6 +12,7 @@ interface Job {
   timeframe: string
   tech: string[]
   tasks: string[]
+  icons: ComponentType[]
 }
 
 const jobs: Job[] = [
@@ -26,6 +28,12 @@ const jobs: Job[] = [
       'SQL Server',
       'React',
     ],
+    icons: [
+      Logos.RailsLogo,
+      Logos.TypeScriptLogo,
+      Logos.ReactLogo,
+      Logos.JavaLogo,
+    ],
     tasks: [
       'Worked with product managers to develop and maintain internal applications for process management.',
       'Lead Developer on a Java/Spring project and a Python/Flask project.',
@@ -38,6 +46,12 @@ const jobs: Job[] = [
     company: 'Akrotech',
     title: 'Jr. Full-Stack Developer',
     timeframe: '2015',
+    icons: [
+      Logos.NodeLogo,
+      Logos.SailsLogo,
+      Logos.AngularLogo,
+      Logos.MongoDbLogo,
+    ],
     tech: [
       'Node + Sails',
       'AngularJS',
@@ -62,11 +76,16 @@ export const Experience: FC = () => {
               <div className={styles.Duration}>{job.timeframe}</div>
             </div>
             <div className={styles.Title}>{job.title}</div>
+            <div className={styles.Icons}>
+              {job.icons.map(Icon => <Icon key={Icon.displayName} />)}
+            </div>
             <div className={styles.Technologies}>
-              {job.tech.map(tech => <div key={tech} className={styles.Item}>{tech}</div>)}
+              {job.tech.map(
+                tech => <div key={tech} className={styles.Item}>{tech}</div>)}
             </div>
             <div className={styles.Tasks}>
-              {job.tasks.map(task => <div key={task} className={styles.Item}>{task}</div>)}
+              {job.tasks.map(
+                task => <div key={task} className={styles.Item}>{task}</div>)}
             </div>
           </div>
         ))}

@@ -16,7 +16,7 @@
 }
 
 .TechHighlights {
-  @include tilted-bg($colour4);
+  @include tilted-bg($colour-white-dark);
 
   display: flex;
   align-content: space-between;

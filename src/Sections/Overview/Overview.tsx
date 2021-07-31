@@ -17,7 +17,11 @@ export const Overview: FC = () => {
         <RubyLogo />
         <TypeScriptLogo />
       </div>
-      <img className={styles.ScrollDown} src={scrollDownImg} alt="Scroll down"/>
+      <img
+        className={styles.ScrollDown}
+        src={scrollDownImg}
+        alt="Scroll down"
+      />
     </div>
   )
 }
