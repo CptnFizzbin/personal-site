@@ -12,8 +12,11 @@
 
   padding-top: 16px;
 
-  &.topOfScreen {
-    display: none;
+  transition: opacity 1s;
+  opacity: 0;
+
+  &.scrolled {
+    opacity: 100%;
   }
 
   @media screen and (max-width: $screen-size-sm) {
