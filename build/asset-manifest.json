@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1fc2ffe3.chunk.css",
+    "main.js": "/static/js/main.686cc44d.chunk.js",
+    "main.js.map": "/static/js/main.686cc44d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3a7c4551.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3a7c4551.js.map",
+    "static/js/2.52406b99.chunk.js": "/static/js/2.52406b99.chunk.js",
+    "static/js/2.52406b99.chunk.js.map": "/static/js/2.52406b99.chunk.js.map",
+    "static/js/3.d3a91431.chunk.js": "/static/js/3.d3a91431.chunk.js",
+    "static/js/3.d3a91431.chunk.js.map": "/static/js/3.d3a91431.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1fc2ffe3.chunk.css.map": "/static/css/main.1fc2ffe3.chunk.css.map",
+    "static/js/2.52406b99.chunk.js.LICENSE.txt": "/static/js/2.52406b99.chunk.js.LICENSE.txt",
+    "static/media/DiscordBots.7425815d.png": "/static/media/DiscordBots.7425815d.png",
+    "static/media/ScoreboardIo.5d58513c.png": "/static/media/ScoreboardIo.5d58513c.png",
+    "static/media/angular-icon.00d10ea6.svg": "/static/media/angular-icon.00d10ea6.svg",
+    "static/media/avatar.db868241.png": "/static/media/avatar.db868241.png",
+    "static/media/flask-icon.2cca5781.svg": "/static/media/flask-icon.2cca5781.svg",
+    "static/media/java-icon.3c5854fc.svg": "/static/media/java-icon.3c5854fc.svg",
+    "static/media/mongodb-icon.0781b723.svg": "/static/media/mongodb-icon.0781b723.svg",
+    "static/media/nodejs-icon.502737ea.svg": "/static/media/nodejs-icon.502737ea.svg",
+    "static/media/postgresql-icon.b941b412.svg": "/static/media/postgresql-icon.b941b412.svg",
+    "static/media/python-icon.439dd3d2.svg": "/static/media/python-icon.439dd3d2.svg",
+    "static/media/reactjs-icon.6c1d44b8.svg": "/static/media/reactjs-icon.6c1d44b8.svg",
+    "static/media/ruby-icon.ff4c3c2c.svg": "/static/media/ruby-icon.ff4c3c2c.svg",
+    "static/media/ruby-on-rails.0df5e528.svg": "/static/media/ruby-on-rails.0df5e528.svg",
+    "static/media/sails-icon.486e6b02.svg": "/static/media/sails-icon.486e6b02.svg",
+    "static/media/springio-icon.d333f33c.svg": "/static/media/springio-icon.d333f33c.svg",
+    "static/media/typescript-icon.78aa7804.svg": "/static/media/typescript-icon.78aa7804.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a7c4551.js",
+    "static/js/2.52406b99.chunk.js",
+    "static/css/main.1fc2ffe3.chunk.css",
+    "static/js/main.686cc44d.chunk.js"
+  ]
+}
