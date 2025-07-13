@@ -30,7 +30,7 @@ export const HomePage: FC = () => {
           sx={{
             backgroundColor: "primary.200",
             padding: 2,
-            maxWidth: 325,
+            maxWidth: 300,
           }}
         >
           <Sidebar />

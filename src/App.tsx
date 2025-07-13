@@ -3,7 +3,7 @@ import { CssBaseline, extendTheme } from "@mui/joy"
 
 import { HomePage } from "./pages/HomePage.tsx"
 import { ResumeProvider } from "./components/Resume/ResumeProvider.tsx"
-import { resume } from "./components/Resume/Resume.ts"
+import { resume } from "./Resume.ts"
 
 const theme = extendTheme({
   fontFamily: {

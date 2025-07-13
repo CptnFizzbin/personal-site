@@ -1,4 +1,4 @@
-import type { ResumeSchema } from "./ResumeSchema.ts"
+import type { ResumeSchema } from "./components/Resume/ResumeSchema.ts"
 
 export const resume: ResumeSchema = {
   contact: {
@@ -7,11 +7,11 @@ export const resume: ResumeSchema = {
     gitHub: "CptnFizzbin",
   },
   profile: [
-    "I’m a passionate web developer that enjoys building tools to help\n" +
-      "others. I am always thinking about how a system can be improved and how\n" +
-      "to best implement a new feature. I have strong experience with web\n" +
-      "technologies such as React, and TypeScript, and experience building\n" +
-      "RESTful backend systems with NodeJS, Spring Boot, and PostgresSQL.",
+    "I am a passionate web developer who enjoys building tools to help others. I am always\n" +
+      "thinking about how a system can be improved and how to best implement a new\n" +
+      "feature. I have strong experience with web technologies such as React, and\n" +
+      "TypeScript, and experience building RESTful backend systems with NodeJS, Spring\n" +
+      "Boot, and PostgresSQL.",
   ],
   experience: [
     {
@@ -91,23 +91,12 @@ export const resume: ResumeSchema = {
     { name: "PostgresSQL", years: 8 },
   ],
   tools: [
-    "Eslint",
-    "Git",
-    "GitHub",
+    "Jest | Vitest | JUnit",
+    "Vite | Webpack",
+    "TanStack Query | React Router",
+    "Spring Boot | Maven",
+    "Eslint | Prettier",
     "GitLab CI/CD",
-    "JUnit",
-    "Jest",
-    "JetBrains IDEs",
-    "MUI",
-    "Maven",
-    "Prettier",
-    "React Router",
-    "Sass",
-    "Spring Boot",
-    "TanStack Query",
-    "Vite",
-    "Webpack",
-    "Zod",
   ],
   interests: [
     "Board Games",
@@ -117,6 +106,8 @@ export const resume: ResumeSchema = {
     "UX Design",
   ],
   life: [
-    "Outside of work, I often am a Game Master for table top RPGs like Dungeons and Dragons or Pathfinder. I have run 2 long term campaigns, and have started up a new adventure recently with a new group of players.",
+    "Outside of work, I am a Game Master for table top RPGs like Dungeons\n" +
+      "and Dragons or Pathfinder. I have run two long term campaigns, and\n" +
+      "have started a new adventure recently with a new group of players.",
   ],
 }

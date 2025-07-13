@@ -58,12 +58,7 @@ export const Sidebar: FC = () => {
 
       <Stack>
         <SideBarHeader>Tools</SideBarHeader>
-        <Stack
-          direction="row"
-          flexWrap={"wrap"}
-          columnGap={1}
-          justifyContent={"space-between"}
-        >
+        <Stack>
           {tools.map((tool) => (
             <Typography key={tool}>{tool}</Typography>
           ))}
