@@ -72,12 +72,14 @@ export interface Education {
 }
 
 export interface Project {
+  id: string
   title: string
   startDate: string
   endDate: string
-  description: string[]
+  writeup: string[]
+  image: string
   tools: string[]
-  links?: Array<{
+  links: Array<{
     title: string
     url: string
   }>

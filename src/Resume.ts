@@ -1,4 +1,6 @@
 import type { ResumeSchema } from "./schema/ResumeSchema.ts"
+import shadowSinImg from "./assets/shadowsin.png"
+import scoreboardIoImg from "./assets/scoreboard-io.png"
 
 export const resume: ResumeSchema = {
   contact: {
@@ -59,11 +61,13 @@ export const resume: ResumeSchema = {
   ],
   projects: [
     {
+      id: "shadow-sin",
       title: "ShadowSIN",
       startDate: "Aug 2021",
       endDate: "April 2022",
       tools: ["React", "React Router", "React Contexts"],
-      description: [],
+      image: shadowSinImg,
+      writeup: [],
       links: [
         {
           title: "Live Site",
@@ -76,11 +80,13 @@ export const resume: ResumeSchema = {
       ],
     },
     {
+      id: "scoreboard-io",
       title: "scoreboard-io.ca",
       startDate: "Jan 2017",
       endDate: "March 2017",
       tools: ["React", "Redux", "Bootstrap"],
-      description: [
+      image: scoreboardIoImg,
+      writeup: [
         "A scoreboard app, primarily written for the card game Wizard, I envisioned\n " +
           "as a more generic place to record and track scores in card games and boardgames.",
         "Original version was written with AngularJS using material design. Then\n" +
