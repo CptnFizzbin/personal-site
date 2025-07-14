@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import { Divider, Stack, Typography } from "@mui/joy"
-import { useResume } from "../Resume/ResumeContext.ts"
+import { useResume } from "../ResumeContext.ts"
 import { ParagraphSection } from "./ParagraphSection.tsx"
 
 export const ExperienceSection: FC = () => {

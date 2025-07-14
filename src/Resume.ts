@@ -1,4 +1,4 @@
-import type { ResumeSchema } from "./components/Resume/ResumeSchema.ts"
+import type { ResumeSchema } from "./schema/ResumeSchema.ts"
 
 export const resume: ResumeSchema = {
   contact: {

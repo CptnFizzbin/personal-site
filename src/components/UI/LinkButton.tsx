@@ -1,0 +1,26 @@
+import type { FC, MouseEventHandler } from "react"
+import { Button, type ButtonProps } from "@mui/joy"
+import { useNavigate } from "react-router"
+
+interface LinkButtonProps extends ButtonProps {
+  to: string
+}
+
+export const LinkButton: FC<LinkButtonProps> = ({
+  to,
+  children,
+  ...buttonProps
+}) => {
+  const navigate = useNavigate()
+
+  const onClick: MouseEventHandler = (event) => {
+    event.preventDefault()
+    navigate(to)
+  }
+
+  return (
+    <Button component={"a"} href={to} onClick={onClick} {...buttonProps}>
+      {children}
+    </Button>
+  )
+}

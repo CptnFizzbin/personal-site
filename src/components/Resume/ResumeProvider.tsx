@@ -1,5 +1,5 @@
 import type { FC, PropsWithChildren } from "react"
-import type { ResumeSchema } from "./ResumeSchema.ts"
+import type { ResumeSchema } from "../../schema/ResumeSchema.ts"
 import { ResumeContext } from "./ResumeContext.ts"
 
 interface ResumeProviderProps extends PropsWithChildren {

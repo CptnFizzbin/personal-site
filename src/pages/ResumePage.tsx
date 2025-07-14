@@ -1,13 +1,13 @@
 import type { FC } from "react"
 import { Box, Divider, Stack, Typography } from "@mui/joy"
 import { Sidebar } from "../components/Sidebar.tsx"
-import { ProfileSection } from "../components/Sections/ProfileSection.tsx"
-import { ExperienceSection } from "../components/Sections/ExperienceSection.tsx"
-import { LifeSection } from "../components/Sections/LifeSection.tsx"
+import { ProfileSection } from "../components/Resume/Sections/ProfileSection.tsx"
+import { ExperienceSection } from "../components/Resume/Sections/ExperienceSection.tsx"
+import { LifeSection } from "../components/Resume/Sections/LifeSection.tsx"
 
-export const HomePage: FC = () => {
+export const ResumePage: FC = () => {
   return (
-    <Stack>
+    <Stack flexGrow={1}>
       <Stack
         sx={{
           backgroundColor: "primary.400",
@@ -25,7 +25,13 @@ export const HomePage: FC = () => {
         </Typography>
       </Stack>
 
-      <Stack direction={"row"}>
+      <Stack
+        direction={"row"}
+        flexGrow={1}
+        maxWidth={1000}
+        margin={"auto"}
+        justifyContent={"center"}
+      >
         <Box
           sx={{
             backgroundColor: "primary.200",
@@ -36,8 +42,8 @@ export const HomePage: FC = () => {
           <Sidebar />
         </Box>
 
-        <Box sx={{ padding: 2, flexGrow: 1 }}>
-          <Stack gap={2} divider={<Divider />} maxWidth={1000}>
+        <Box sx={{ padding: 2 }}>
+          <Stack gap={2} divider={<Divider />}>
             <ProfileSection />
             <ExperienceSection />
             <LifeSection />
