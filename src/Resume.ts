@@ -59,6 +59,23 @@ export const resume: ResumeSchema = {
   ],
   projects: [
     {
+      title: "ShadowSIN",
+      startDate: "Aug 2021",
+      endDate: "April 2022",
+      tools: ["React", "React Router", "React Contexts"],
+      description: [],
+      links: [
+        {
+          title: "Live Site",
+          url: "https://shadowsin.stephenawilson.ca/Artemis",
+        },
+        {
+          title: "GitHub",
+          url: "https://github.com/CptnFizzbin/shadow-sin",
+        },
+      ],
+    },
+    {
       title: "scoreboard-io.ca",
       startDate: "Jan 2017",
       endDate: "March 2017",
@@ -72,7 +89,13 @@ export const resume: ResumeSchema = {
           "complete side project. I still use it from time to time when I need to\n" +
           "count up scores in a board game.",
       ],
-      links: [{ title: "GitHub", url: "https://scoreboard-io.ca" }],
+      links: [
+        { title: "Live Site", url: "https://scoreboard-io.ca" },
+        {
+          title: "GitHub",
+          url: "https://github.com/CptnFizzbin/scoreboard-io",
+        },
+      ],
     },
   ],
   education: [
