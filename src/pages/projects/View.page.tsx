@@ -16,15 +16,6 @@ export const ViewProjectPage: FC = () => {
 
   return (
     <Stack gap={1}>
-      <Box
-        sx={(theme) => ({
-          backgroundColor: theme.palette.primary[400],
-          padding: 2,
-        })}
-      >
-        <Typography level={"h1"}>{project.title}</Typography>
-      </Box>
-
       <Box>
         <LinkButton to={"/projects"} variant={"plain"}>
           Back to projects

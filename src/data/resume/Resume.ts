@@ -1,6 +1,6 @@
-import type { ResumeSchema } from "./schema/ResumeSchema.ts"
-import shadowSinImg from "./assets/shadowsin.png"
-import scoreboardIoImg from "./assets/scoreboard-io.png"
+import type { ResumeSchema } from "../../schema/ResumeSchema.ts"
+import { scoreboardIoProject } from "./projects/scoreboard-io.ts"
+import { shadowSinProject } from "./projects/shadowsin.ts"
 
 export const resume: ResumeSchema = {
   contact: {
@@ -59,51 +59,7 @@ export const resume: ResumeSchema = {
       ],
     },
   ],
-  projects: [
-    {
-      id: "shadow-sin",
-      title: "ShadowSIN",
-      startDate: "Aug 2021",
-      endDate: "April 2022",
-      tools: ["React", "React Router", "React Contexts"],
-      image: shadowSinImg,
-      writeup: [],
-      links: [
-        {
-          title: "Live Site",
-          url: "https://shadowsin.stephenawilson.ca/Artemis",
-        },
-        {
-          title: "GitHub",
-          url: "https://github.com/CptnFizzbin/shadow-sin",
-        },
-      ],
-    },
-    {
-      id: "scoreboard-io",
-      title: "scoreboard-io.ca",
-      startDate: "Jan 2017",
-      endDate: "March 2017",
-      tools: ["React", "Redux", "Bootstrap"],
-      image: scoreboardIoImg,
-      writeup: [
-        "A scoreboard app, primarily written for the card game Wizard, I envisioned\n " +
-          "as a more generic place to record and track scores in card games and boardgames.",
-        "Original version was written with AngularJS using material design. Then\n" +
-          "over the course of a 5-hour road trip I rewrote it using React and Redux.",
-        "This was the project that I primarily learned React with, and is my most\n" +
-          "complete side project. I still use it from time to time when I need to\n" +
-          "count up scores in a board game.",
-      ],
-      links: [
-        { title: "Live Site", url: "https://scoreboard-io.ca" },
-        {
-          title: "GitHub",
-          url: "https://github.com/CptnFizzbin/scoreboard-io",
-        },
-      ],
-    },
-  ],
+  projects: [shadowSinProject, scoreboardIoProject],
   education: [
     {
       title: "Computer Programmer/Analyst",

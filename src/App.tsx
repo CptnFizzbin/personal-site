@@ -1,7 +1,7 @@
 import { CssVarsProvider } from "@mui/joy/styles"
 import { CssBaseline, extendTheme } from "@mui/joy"
 import { ResumeProvider } from "./components/Resume/ResumeProvider.tsx"
-import { resume } from "./Resume.ts"
+import { resume } from "./data/resume/Resume.ts"
 import { RouterProvider } from "react-router"
 import { routes } from "./routes.tsx"
 

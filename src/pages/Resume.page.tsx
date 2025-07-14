@@ -34,13 +34,14 @@ export const ResumePage: FC = () => {
       >
         <Box
           sx={{
-            backgroundColor: "primary.200",
             padding: 2,
             maxWidth: 300,
           }}
         >
           <Sidebar />
         </Box>
+
+        <Divider orientation={"vertical"} />
 
         <Box sx={{ padding: 2 }}>
           <Stack gap={2} divider={<Divider />}>

@@ -13,6 +13,11 @@ export const Header: FC = () => {
         justifyContent: "space-between",
         gap: 2,
         padding: 1,
+        "@media print": {
+          ".no-print, .no-print *": {
+            display: "none !important",
+          },
+        },
       }}
     >
       <Stack direction={"row"} gap={1} component={Link} to={"/"}>

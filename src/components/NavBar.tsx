@@ -10,20 +10,11 @@ export interface NavBarProps {
 export const NavBar: FC<NavBarProps> = ({ itemGap = 1 }) => {
   const routes = useMatches()
   console.log(routes)
-  const isAboutPage = routes.some((route) => route.pathname === "/about")
   const isProjectsPage = routes.some((route) => route.pathname === "/projects")
   const isResumePage = routes.some((route) => route.pathname === "/resume")
 
   return (
     <Stack direction={"row"} gap={itemGap}>
-      <LinkButton
-        variant={isAboutPage ? "solid" : "plain"}
-        to={"/"}
-        disabled
-        title={"coming soon"}
-      >
-        About
-      </LinkButton>
       <LinkButton variant={isProjectsPage ? "solid" : "plain"} to={"/projects"}>
         Projects
       </LinkButton>
