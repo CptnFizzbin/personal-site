@@ -28,6 +28,12 @@ export const IntroPage: FC = () => {
           </Box>
 
           <Typography level={"title-lg"}>Full Stack Developer</Typography>
+
+          <Stack direction={"row"} gap={3}>
+            <Typography>
+              TypeScript, React, NodeJS, Express, Java, Spring
+            </Typography>
+          </Stack>
         </Stack>
 
         <NavBar itemGap={2} />

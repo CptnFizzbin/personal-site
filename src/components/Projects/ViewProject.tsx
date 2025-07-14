@@ -1,27 +1,15 @@
 import type { FC } from "react"
-import { useParams } from "react-router"
-import { useResume } from "../../components/Resume/ResumeContext.ts"
-import { Box, Button, Sheet, Stack, Typography } from "@mui/joy"
-import { LinkButton } from "../../components/UI/LinkButton.tsx"
-import { Markdown } from "../../components/Markdown.tsx"
+import { Button, Sheet, Stack, Typography } from "@mui/joy"
+import { Markdown } from "../Markdown.tsx"
+import type { Project } from "../../schema/ResumeSchema.ts"
 
-export const ViewProjectPage: FC = () => {
-  const { projectId } = useParams()
-  const { projects } = useResume()
+interface ViewProjectProps {
+  project: Project
+}
 
-  if (!projectId) throw new Error("projectId param missing")
-
-  const project = projects.find((project) => project.id === projectId)
-  if (!project) throw new Error("project not found")
-
+export const ViewProject: FC<ViewProjectProps> = ({ project }) => {
   return (
     <Stack gap={1}>
-      <Box>
-        <LinkButton to={"/projects"} variant={"plain"}>
-          Back to projects
-        </LinkButton>
-      </Box>
-
       <Stack direction={"row"} padding={2} paddingTop={0} gap={2}>
         <Stack gap={1}>
           <Sheet sx={{ padding: 1, borderRadius: 8 }} variant={"outlined"}>

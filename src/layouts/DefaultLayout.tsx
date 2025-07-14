@@ -5,7 +5,7 @@ import { Outlet } from "react-router"
 
 export const DefaultLayout: FC = () => {
   return (
-    <Stack sx={{ minHeight: "100vh" }}>
+    <Stack sx={{ height: "100vh", overflowY: "auto" }}>
       <Header />
       <Outlet />
     </Stack>
