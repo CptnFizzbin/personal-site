@@ -2,8 +2,8 @@ import type { FC } from "react"
 import { useParams } from "react-router"
 import { useResume } from "../../components/Resume/ResumeContext.ts"
 import { Box, Button, Sheet, Stack, Typography } from "@mui/joy"
-import { ParagraphSection } from "../../components/Resume/Sections/ParagraphSection.tsx"
 import { LinkButton } from "../../components/UI/LinkButton.tsx"
+import { Markdown } from "../../components/Markdown.tsx"
 
 export const ViewProjectPage: FC = () => {
   const { projectId } = useParams()
@@ -52,7 +52,7 @@ export const ViewProjectPage: FC = () => {
         </Stack>
 
         <Stack>
-          <ParagraphSection title="About" content={project.writeup} />
+          <Markdown>{project.writeup.join("\n\n")}</Markdown>
         </Stack>
       </Stack>
     </Stack>
