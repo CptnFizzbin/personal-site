@@ -1,5 +1,5 @@
 import type { FC } from "react"
-import { Box, Stack, Typography } from "@mui/joy"
+import { Box, Button, Stack, Typography } from "@mui/joy"
 import { CptnFizzbinAvatar, StephenAvatar } from "../components/Avatar.tsx"
 import { LinkButton } from "../components/UI/LinkButton.tsx"
 
@@ -41,6 +41,14 @@ export const IntroPage: FC = () => {
           <LinkButton variant={"plain"} to={"/resume"}>
             Resume
           </LinkButton>
+          <Button
+            component={"a"}
+            variant={"plain"}
+            href={"https://github.com/CptnFizzbin"}
+            target={"_blank"}
+          >
+            GitHub
+          </Button>
         </Stack>
       </Stack>
     </Stack>

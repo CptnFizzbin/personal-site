@@ -1,5 +1,5 @@
 import type { FC } from "react"
-import { Stack, Typography } from "@mui/joy"
+import { Button, Stack, Typography } from "@mui/joy"
 import { StephenAvatar } from "../Avatar.tsx"
 import { Link } from "./Link.tsx"
 import { LinkButton } from "./LinkButton.tsx"
@@ -30,6 +30,14 @@ export const Header: FC = () => {
         <LinkButton variant={"solid"} to={"/resume"}>
           Resume
         </LinkButton>
+        <Button
+          component={"a"}
+          variant={"plain"}
+          href={"https://github.com/CptnFizzbin"}
+          target={"_blank"}
+        >
+          GitHub
+        </Button>
       </Stack>
     </Stack>
   )

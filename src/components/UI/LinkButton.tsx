@@ -1,9 +1,10 @@
-import type { FC, MouseEventHandler } from "react"
+import type { FC, HTMLAttributeAnchorTarget, MouseEventHandler } from "react"
 import { Button, type ButtonProps } from "@mui/joy"
 import { useNavigate } from "react-router"
 
 interface LinkButtonProps extends ButtonProps {
   to: string
+  target?: HTMLAttributeAnchorTarget
 }
 
 export const LinkButton: FC<LinkButtonProps> = ({
